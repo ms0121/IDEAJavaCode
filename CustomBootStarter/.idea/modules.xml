@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/liu-sprig-boot-starter/liu-sprig-boot-starter.iml" filepath="$PROJECT_DIR$/liu-sprig-boot-starter/liu-sprig-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lms-spring-boot-autoConfigurer/lms-spring-boot-autoConfigurer.iml" filepath="$PROJECT_DIR$/lms-spring-boot-autoConfigurer/lms-spring-boot-autoConfigurer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lms-spring-boot-starter/lms-spring-boot-starter.iml" filepath="$PROJECT_DIR$/lms-spring-boot-starter/lms-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lms-test/lms-test.iml" filepath="$PROJECT_DIR$/lms-test/lms-test.iml" />
+    </modules>
+  </component>
+</project>

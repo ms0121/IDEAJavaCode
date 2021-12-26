@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+    <!--下面编写的是Ssql语句-->
+    <!--<mapper namespace="com.liu.mybatis.EmployeeMapper">-->
+    <!--使用接口式实现的方法-->
+
+
+<mapper namespace="com.liu.mybatis.dao.EmployeeMapper">
+    <!--
+       namespace: 名称空间
+       id: 唯一标志符(就是jdbc里面的占位符,即按照指定的id进行查询信息)
+                从传递过来的参数中取出id
+       resultType：返回值类型，（获取配置文件指定的别名）
+     -->
+<!--    <select id="selectEmp" resultType="com.liu.mybatis.bean.Employee" 推荐使用-->
+<!--    直接使用接口里面的方法-->
+<!--    <select id="getEmpById" resultType="emp"> -->
+
+
+    <!--    查询员工-->
+    <select id="getEmpById" resultType="com.liu.mybatis.bean.Employee">
+        <!-- select id, last_name lastName, gender, email from tbl_employee where id = #{id} -->
+        select * from tbl_employee where id = #{id}
+    </select>
+
+    <!--  增加 parameterType可以省略,标签的id就是 方法名 -->
+    <!--
+        Mybatis支持自增主键，自增主键值的获取，Mybatis也是利用statement.getGeneratedKeys()
+         useGeneratedKeys="true"表示使用自增主键获取主键值策略
+         keyProperty="id"指定对应的主键属性，也就是Mybatis获取到主键以后，将这个值
+            封装给Javabean对象中的这个属性
+        只有一个参数的可以直接按照下列的方式进行编写sql语句
+   -->
+    <insert id="addEmp" parameterType="com.liu.mybatis.bean.Employee"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into tbl_employee(last_name,gender,email) values(#{lastName}, #{gender}, #{email})
+    </insert>
+
+    <!--  修改-->
+    <update id="updateEmp">
+        update tbl_employee set last_name=#{lastName}, gender=#{gender}, email=#{email} where id=#{id}
+    </update>
+
+    <!--  删除 -->
+    <delete id="deleteEmpById">
+        delete from tbl_employee where id=#{id}
+    </delete>
+
+    <!--  有多个参数进行查询的，必须指定参数  -->
+    <select id="getEmpByIdAndName" resultType="com.liu.mybatis.bean.Employee">
+        select * from tbl_employee where id=#{id} and last_name=#{lastName}
+    </select>
+
+    <!--    public List<Employee> queryForEmps(Integer id);
+        如果要返回的是一个集合，返回类型要写集合中的元素类型
+    -->
+    <select id="queryForEmps" resultType="com.liu.mybatis.bean.Employee">
+        select * from tbl_employee where last_name like #{id}
+    </select>
+
+    <!--    public Map<String, Object> getEmpByIdReMap(Integer id);
+        mybatis对于常用的map进行了封装，所以可以直接写返回值类型是map
+     -->
+    <select id="getEmpByIdReMap" resultType="map">
+        select * from tbl_employee where id = #{id}
+    </select>
+
+    <!--    public Map<Integer, Employee> getEmpByreturnMap(String lastName);-->
+    <select id="getEmpByreturnMap" resultType="com.liu.mybatis.bean.Employee">
+        select * from tbl_employee where last_name like #{lastName}
+    </select>
+</mapper>
+
+

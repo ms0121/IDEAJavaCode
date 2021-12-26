@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+    <script>
+    //         JS 中 数组的定义：
+    //         格式：
+    //              var 数组名 = []; // 空数组
+    //              var 数组名 = [1 , ’abc’ , true]; // 定义数组同时赋值元素
+        var arr = [1, true];
+        // alert(arr.length);
+        // alert(arr[1]);
+
+        // 默认会将前面没有的进行填补，比如前面的数组的长度只有两个，但是给arr[4]进行赋值后，就会自动的将数组的长度更新到5
+        arr[4] = 3;
+        alert(arr.length)
+
+        arr[1] = "已经被修改了，哈哈哈";
+        alert(arr[1]);
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

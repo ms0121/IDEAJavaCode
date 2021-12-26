@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-model="http://www.w3.org/1999/xhtml"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        {{message}}
+        <br>
+<!--        单向绑定：v-bind-->
+        单向绑定:
+        <input type="text" v-bind:value="message">
+<!--        双向绑定-->
+        <br>
+        双向绑定:
+        <input type="text" v-model:value="message">
+        <br>
+
+<!--        绑定事件： v-on: 事件名称="调用方法"-->
+        <button v-on:click="show()">单击事件1</button>
+        <br>
+        <button @click="show()">单击事件2</button>
+        <br>
+
+
+<!--        条件指令  v-if-->
+        请选择: <input type="checkbox" v-model:value="flag">
+        <br>
+        <div v-if="flag">选中了</div><br>
+        <div v-else="!flag">没有选中</div><br>
+
+
+<!--        循环指令：v-for-->
+        <div v-for="user in userList">
+            {{user.name}} ===> {{user.age}}
+        </div>
+        <br>
+        <div v-for="(user, index) in userList">
+            {{index}} : {{user.name}} ===> {{user.age}}
+        </div>
+
+    </div>
+
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data:{
+                message: "lms",
+                flag: false,
+                userList:[
+                    {name: "zhangsan", age:20},
+                    {name: "lisi", age: 29}
+                ]
+            },
+            methods: {
+                show() {
+                    alert("show.......");
+                }
+            },
+            //页面渲染之前执行该方法
+            created(){
+                debugger;
+                console.log("created........");
+            },
+            //页面渲染之后执行
+            mounted(){
+                debugger;
+                console.log("mounted........");
+            }
+
+
+        })
+
+    </script>
+
+</body>
+</html>

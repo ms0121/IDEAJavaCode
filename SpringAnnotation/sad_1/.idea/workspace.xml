@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2aedf870-2781-4758-b7d0-5f38e0e27811" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mybatis-config" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Maven-Git/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\E_DISK\Maven-Git\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sBbUGluJvCnQg20UDAt9gSmfhc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="JUnit.tx_MainConfigTx.test1">
+    <configuration name="aop_MainConfigOfAop.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sad_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.aop_MainConfigOfAop" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ioc_MainConfigLifeTest.getB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sad_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.ioc_MainConfigLifeTest" />
+      <option name="METHOD_NAME" value="getB" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ioc_MainConfigTest3.testImport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sad_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.ioc_MainConfigTest3" />
+      <option name="METHOD_NAME" value="testImport" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ioc_MianConfigTest2.testImport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sad_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.ioc_MianConfigTest2" />
+      <option name="METHOD_NAME" value="testImport" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tx_MainConfigTx.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sad_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.tx_MainConfigTx" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.tx_MainConfigTx.test1" />
+        <item itemvalue="JUnit.aop_MainConfigOfAop.test1" />
+        <item itemvalue="JUnit.ioc_MainConfigTest3.testImport" />
+        <item itemvalue="JUnit.ioc_MainConfigLifeTest.getB" />
+        <item itemvalue="JUnit.ioc_MianConfigTest2.testImport" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2aedf870-2781-4758-b7d0-5f38e0e27811" name="Default Changelist" comment="" />
+      <created>1620348944244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620348944244</updated>
+      <workItem from="1620348948205" duration="95000" />
+      <workItem from="1620349072723" duration="10298000" />
+      <workItem from="1620365202955" duration="11194000" />
+      <workItem from="1620437218179" duration="6697000" />
+      <workItem from="1620450914265" duration="1575000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1620377181326">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1620377181326" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1620379950217">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1620379950217" />
+    <state width="1322" height="303" key="GridCell.Tab.0.bottom" timestamp="1620454620525">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="303" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620454620525" />
+    <state width="1322" height="303" key="GridCell.Tab.0.center" timestamp="1620454620525">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="303" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620454620525" />
+    <state width="1322" height="303" key="GridCell.Tab.0.left" timestamp="1620454620525">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="303" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620454620525" />
+    <state width="1322" height="303" key="GridCell.Tab.0.right" timestamp="1620454620525">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="303" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620454620525" />
+    <state x="213" y="18" key="Maven.ArtifactSearchDialog" timestamp="1620350301769">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="18" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1620350301769" />
+    <state x="92" y="92" width="1182" height="544" key="dock-window-1" timestamp="1620349284177">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1620349284177" />
+    <state x="53" y="58" key="new project wizard" timestamp="1620454617123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="53" y="58" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1620454617123" />
+    <state x="729" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1620445882705">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="729" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1620445882705" />
+  </component>
+</project>

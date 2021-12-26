@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<h2>测试当前提交的请求的方式</h2>
+<form th:action="/user" method="get">
+    <input type="submit" value="get 提交">
+</form>
+<form th:action="/user" method="post">
+    <input type="submit" value="post 提交">
+</form>
+<form th:action="/user" method="post">
+    <input name="_method" type="hidden" value="put">
+    <input type="submit" value="put 提交">
+</form>
+<form th:action="/user" method="post">
+    <input name="_method" type="hidden" value="delete">
+    <input type="submit" value="delete 提交">
+</form>
+
+</body>
+</html>

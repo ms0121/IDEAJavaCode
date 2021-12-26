@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- 声明组件扫描器，即@controller注解修饰的包下的类就可以创建对象从而执行类里面的方法   -->
+    <context:component-scan base-package="com.liu.controller"/>
+
+    <!-- 声明springmvc框架的视图解析器，帮助开发人员设置视图文件的路径   -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--  前缀：视图文件的路径, 斜杠不可以少      -->
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!--声明拦截器，拦截器可以有0个或者多个，配置拦截器的文件信息   -->
+    <mvc:interceptors>
+        <!--  声明第一个拦截器      -->
+        <mvc:interceptor>
+            <!--
+                指定被拦截的url路径下的地址，
+                    path：就是url地址，可以使用通配符 **
+                    ** : 表示任意的字符，文件或者多级目录以及目录之下的文件
+                    （也就是说，当前工程下的所有url的访问都必须先通过拦截器，才能进行下一步的操作）
+            -->
+            <mvc:mapping path="/**"/>
+            <!-- 声明拦截器对象  -->
+            <bean class="com.liu.handler.Myinterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
+</beans>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-methods</title>
+    <!--  导入vue.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+</head>
+<body>
+    <h3>hello,test-methods, --> Vue.js</h3>
+
+<!--  view显示层  -->
+    <div id="app">
+        <button v-on:click="sayHi">登录</button>
+    </div>
+
+
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data:{
+                message: "函数调用了......"
+            },
+            // 方法必须定义在vue对象中的methods中，v-on事件，后面添加具体的响应事件
+            methods: {
+                sayHi: function (event) {
+                    // this表示当前的这个对象vm，即调用vm中的message属性的值
+                    alert(this.message);
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--下面编写的是Ssql语句-->
+<!--<mapper namespace="com.liu.mybatis.EmployeeMapper">-->
+<!--使用接口式实现的方法-->
+
+
+<mapper namespace="com.liu.mybatis.dao.EmployeeMapper">
+    <!--
+       namespace: 名称空间
+       id: 唯一标志符(就是jdbc里面的占位符,即按照指定的id进行查询信息)
+                从传递过来的参数中取出id
+       resultType：返回值类型，
+     -->
+<!--    <select id="selectEmp" resultType="com.liu.mybatis.bean.Employee">-->
+<!--    直接使用接口里面的方法-->
+    <select id="getEmpById" resultType="com.liu.mybatis.bean.Employee">
+        select id, last_name lastName, gender, email from tbl_employee where id = #{id}
+    </select>
+</mapper>
+
+

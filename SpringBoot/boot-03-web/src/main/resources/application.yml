@@ -1,0 +1,30 @@
+#解决动态资源和静态资源名相同的情况下的解决方法：
+# 访问的是动态资源：http://localhost:8080/test1.jpg
+# 访问的是静态资源：http://localhost:8080/res/test1.jpg
+#表示：当前项目 + res(标志是静态资源) + 静态资源名  == 静态资源文件夹下找
+#
+#spring:
+#  mvc:
+#    static-path-pattern: /res/**
+#
+#  web:
+#    resources:
+#      static-locations: [classpath:/hhh/]
+#
+#  static-locations:用于指定那个文件夹下的文件是静态资源
+#spring:
+#  mvc:
+#    hiddenmethod:
+#      filter:
+#        enabled: true
+#    contentnegotiation:
+#      favor-parameter: true
+#  #  mvc:
+#  #    static-path-pattern: /res/**
+#
+#  web:
+#    resources:
+#      static-locations: [classpath:/haha/]
+#      add-mappings: true
+#      cache:
+#        period: 11000

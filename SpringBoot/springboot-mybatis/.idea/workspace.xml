@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d58f2ce0-abdd-4fa1-b634-a7cd48bd3fb9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="mybatis-mapper" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sR3qlEvdQCgw4JHjUOOXjy9uHt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ServletCRM/crm" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\ServletCRM\springboot-mybatis\src\main\resources\mybatis" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootMybatisApplication">
+    <configuration name="SpringbootMybatisApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.boot" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.boot.SpringbootMybatisApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.SpringbootMybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringbootMybatisApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d58f2ce0-abdd-4fa1-b634-a7cd48bd3fb9" name="Default Changelist" comment="" />
+      <created>1620821767669</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620821767669</updated>
+      <workItem from="1620821773731" duration="4541000" />
+      <workItem from="1620826489304" duration="27000" />
+      <workItem from="1620826570163" duration="607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1620827180800">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1620827180800" />
+    <state width="1322" height="295" key="GridCell.Tab.0.bottom" timestamp="1620827184183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="295" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620827184183" />
+    <state width="1322" height="295" key="GridCell.Tab.0.center" timestamp="1620827184183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="295" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620827184183" />
+    <state width="1322" height="295" key="GridCell.Tab.0.left" timestamp="1620827184183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="295" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620827184183" />
+    <state width="1322" height="295" key="GridCell.Tab.0.right" timestamp="1620827184183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="295" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620827184183" />
+    <state width="1322" height="295" key="GridCell.Tab.1.bottom" timestamp="1620827184183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="295" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620827184183" />
+    <state width="1322" height="295" key="GridCell.Tab.1.center" timestamp="1620827184183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="295" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1620827184183" />
+    <state width="1322" height="295" key="GridCell.Tab.1.left" timestamp="1620827184183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="295" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1620827184183" />
+    <state width="1322" height="295" key="GridCell.Tab.1.right" timestamp="1620827184183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="295" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1620827184183" />
+  </component>
+</project>

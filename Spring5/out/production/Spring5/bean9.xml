@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    1. 以前的手动装填的方式-->
+<!--    <bean id="emp" class="com.liu.spring.autowire.Emp">-->
+<!--        <property name="dept" ref="dept"></property>-->
+<!--    </bean>-->
+
+<!--    实现自动装配-->
+<!--    bean 标签属性 autowire，配置自动装配-->
+<!--    autowire 属性常用两个值：-->
+    <!--    byName 根据属性名称注入 ，注入值 bean 的 id 值和类属性名称一样-->
+    <!--    byType 根据属性类型注入,但是要注意配置文件中只能有一个对象类型的配置文件-->
+    <bean id="emp" class="com.liu.spring.autowire.Emp" autowire="byName"></bean>
+
+    <bean id="dept" class="com.liu.spring.autowire.Dept"></bean>
+</beans>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71f3f7f4-8aff-4213-8829-1d4de62d702d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sYKw2LAovDDUsD1A4PX83fF7CL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="JUnit.KbootRedis06ApplicationTests.contextLoads">
+    <configuration name="KbootRedis06ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kboot-redis-06" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.boot" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.boot.KbootRedis06ApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KbootRedis06Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="kboot-redis-06" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.KbootRedis06Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.KbootRedis06ApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71f3f7f4-8aff-4213-8829-1d4de62d702d" name="Default Changelist" comment="" />
+      <created>1621044317762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621044317762</updated>
+      <workItem from="1621044321853" duration="3023000" />
+      <workItem from="1621059025993" duration="596000" />
+      <workItem from="1621072985880" duration="193000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="462" y="117" key="FileChooserDialogImpl" timestamp="1621073177841">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621073177841" />
+    <state width="1322" height="223" key="GridCell.Tab.0.bottom" timestamp="1621051922390">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621051922390" />
+    <state width="1322" height="223" key="GridCell.Tab.0.center" timestamp="1621051922390">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621051922390" />
+    <state width="1322" height="223" key="GridCell.Tab.0.left" timestamp="1621051922390">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621051922390" />
+    <state width="1322" height="223" key="GridCell.Tab.0.right" timestamp="1621051922390">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621051922390" />
+    <state x="53" y="64" key="new project wizard" timestamp="1621073180113">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="53" y="64" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1621073180113" />
+  </component>
+</project>

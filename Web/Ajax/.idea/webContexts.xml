@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/../AjaxLocal/web/index.jsp" value="file://$PROJECT_DIR$/../AjaxLocal/web" />
+        <entry key="file://$PROJECT_DIR$/../JQuery1/web/form2.html" value="file://$PROJECT_DIR$/../JQuery1/web" />
+        <entry key="file://$PROJECT_DIR$/../JQuery1/web/function2.html" value="file://$PROJECT_DIR$/../JQuery1/web" />
+        <entry key="file://$PROJECT_DIR$/../JQuery1/web/funtion.html" value="file://$PROJECT_DIR$/../JQuery1/web" />
+        <entry key="file://$PROJECT_DIR$/../JQuery1/web/jq1.html" value="file://$PROJECT_DIR$/../JQuery1/web" />
+        <entry key="file://$PROJECT_DIR$/../JQuery1/web/js.html" value="file://$PROJECT_DIR$/../JQuery1/web" />
+        <entry key="file://$PROJECT_DIR$/../Level-Ajax-jQuery/web/index.jsp" value="file://$PROJECT_DIR$/../Level-Ajax-jQuery/web" />
+      </map>
+    </option>
+  </component>
+</project>

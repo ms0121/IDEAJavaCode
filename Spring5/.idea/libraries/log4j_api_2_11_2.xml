@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="log4j-api-2.11.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-slf4j-impl-2.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.7-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.30.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

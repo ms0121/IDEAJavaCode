@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.liu.mybatis.dao.EmployeeMapper">
+
+	<!-- 原始方法开启缓存 -->		
+	<!-- <cache eviction="FIFO" flushInterval="60000"></cache> -->
+	<!-- 使用了jar包之后的方式 -->
+	<cache type=""></cache>
+	
+    <select id="getEmpById" resultType="com.liu.mybatis.bean.Employee">
+        select id, last_name lastName, gender, email from tbl_employee where id = #{id}
+</select>
+
+</mapper>
+
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        声明Student对象：
+        注入：就是赋值的意思
+        简单类型：spring中规定Java的基本数据类型和string类型都是简单类型
+        di:给属性赋值
+        1.set注入（设值注入）：spring调用类的set方法（只要有set方法即可，不管是否有该属性），就可以在set方法中完成属性赋值
+            1)简单的类型的set注入
+            <bean id="xx" class="yyy">
+                <property name="属性名字" value="此属性的值"/>
+                <property .../>
+            </bean>
+
+            2）. 包含引用类型的set注入方式，
+            <bean id="xx" class="yyy">
+                <property name="属性名字" ref="bean的id（对象的名称）"/>
+            </bean>
+
+        2. 构造注入：spring调用类有参构造方法，在创建对象的同时，在构造方法中给属性赋值
+            构造注入使用<constructor-arg/>标签
+            <constructor-arg/>标签：一个<constructor-arg/>表示构造方法中的一个参数
+            <constructor-arg/>标签属性：
+                name：表示使用构造方法的形参名
+                index：表示构造方法的参数的位置，参数从左到右的位置是0，1,2，的顺序
+                value: 构造方法的形参类型是简单类型的，使用value
+                ref：构造方法的形参类型是引用类型的，使用ref
+    -->
+
+    <!--  使用有参构造方法 -->
+    <bean id="student" class="com.liu.da03.Student">
+        <!--  使用name属性，即构造方法的形参名  -->
+        <constructor-arg name="myname" value="李四"/>
+        <constructor-arg name="myage" value="20"/>
+        <constructor-arg name="myschool" ref="myxuexiao"/>
+    </bean>
+
+    <!-- 直接使用index属性，这会根据构造方法中参数的位置进行编码   -->
+    <bean id="student1" class="com.liu.da03.Student">
+        <!--  使用index属性，即构造方法的参数位置属性  -->
+        <constructor-arg index="0" value="李四"/>
+        <constructor-arg index="1" value="20"/>
+        <constructor-arg index="2" ref="myxuexiao"/>
+    </bean>
+
+
+
+
+    <!--  使用原来的set方式的注入  -->
+    <bean id="myxuexiao" class="com.liu.da03.School">
+        <property name="name"  value="中国地质大学"/>
+        <property name="address" value="北京海淀区学院路"/>
+    </bean>
+
+
+</beans>
+<!--
+    spring配置文件：
+        bean：是根标签，spring把java对象成为bean
+        spring-beans.xsd: 是约束文件，和mybatis指定的dtd是一样
+-->
+
+
+

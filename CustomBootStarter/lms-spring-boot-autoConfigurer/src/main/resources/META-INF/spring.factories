@@ -1,0 +1,2 @@
+# 将HelloAutoConfiguration编写到META-INF/spring.factories文件中
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.liu.HelloAutoConfiguration

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	div{
+		width:100px;
+		height:260px;
+	}
+
+	/*div.名字 表示当前的这个属性只能作用在div标签上*/
+	div.whiteborder{
+		border: 2px white solid;
+	}
+	
+	div.redDiv{
+		background-color: red;
+	}
+	
+	div.blueBorder{
+		border: 5px blue solid;
+	}
+	
+</style>
+
+<script type="text/javascript" src="script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	
+	// 加载当前页面内容
+	$(function(){
+
+		// 获取当前页面的第一个<div>标签的对象
+		var $divEle = $('div:first');
+
+		// 绑定按钮1的点击事件
+		$('#btn01').click(function(){
+			//addClass() - 向被选元素添加一个或多个类(添加多个使用空格作为间隔)
+			$divEle.addClass("redDiv blueBorder");
+		});
+		
+		$('#btn02').click(function(){
+			//removeClass() - 从被选元素删除一个或多个类 
+			$divEle.remove();
+		});
+	
+		
+		$('#btn03').click(function(){
+			//toggleClass() - 对被选元素进行添加/删除类的切换操作
+			//切换就是如果具有该类那么删除，如果没有那么添加上
+			$divEle.toggleClass("redDiv");
+		});
+		
+		
+		$('#btn04').click(function(){
+			//offset() - 返回第一个匹配元素相对于文档的位置。
+			$divEle.offset({
+				top:50,
+				left:60
+			});
+		});
+		
+	
+		
+	})
+</script>
+</head>
+<body>
+
+	<table align="center">
+		<tr>
+			<td>
+<!--				第一个div标签-->
+				<div class="border">
+				</div>
+
+			</td>
+			
+			<td>
+				<div class="btn">
+					<input type="button" value="addClass()" id="btn01"/>
+					<input type="button" value="removeClass()" id="btn02"/>
+					<input type="button" value="toggleClass()" id="btn03"/>
+					<input type="button" value="offset()" id="btn04"/>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	
+	
+	<br /> <br />
+	
+	
+	<br /> <br />
+	
+	
+	
+</body>
+</html>

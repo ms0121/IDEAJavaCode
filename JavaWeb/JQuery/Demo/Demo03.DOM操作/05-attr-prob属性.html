@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+    <script type="text/javascript" >
+
+        $(function () {
+            // alert($(":checkbox").first().attr("name"));
+            // 还可以设置属性值（此时输入两个值）,表示选择所有的选择框
+            alert($(":checkbox").attr("checked", true));
+            alert($(":checkbox").prop("checked"));  // 只有 一个输入的时候会返回是否能够查到，即true or false，
+        })
+
+    </script>
+
+</head>
+<body>
+    多选框:
+    <br/>
+    <input name="checkb1" type="checkbox" value="check1">boy<br/>
+    <input name="checkb2" type="checkbox" value="check2">girl<br/>
+
+</body>
+</html>

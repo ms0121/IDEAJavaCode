@@ -1,0 +1,2 @@
+
+当前的项目直接使用mybatis的逆向工程生成对应的bean和mapper映射文件

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+
+    <script type="text/javascript">
+        // 表示要求字符串中，是否包含字母
+        // var patt = new RegExp("e");
+        // var patt = /e/;也是正则表达式对象
+        //// 表示要求字符串中，是否包含字母a或者b或者c等
+        // var patt = /[abc]/;
+        // 表示要求字符串中，是否包含任意小写字母
+        // var patt = /[a-z]/;
+        // 表示要求字符串中，是否包含任意大写字母
+        // var patt = /[A-Z]/;
+        // 表示要求字符串中，是否包含字母数字下划线
+        // var patt = /[0-9]/;
+        // 表示要求字符串中，是否包含任意数字
+        // var patt = /\w/;
+        // 表示要求字符串中，是否包含至少一个a
+        // var patt = /l+/;
+        // 表示要求字符串中，是否包含0个或者多个a
+        // var patt = /a*/;
+        // 表示要求字符串中，是否包含一个或者0个a
+        // var patt = /a?/;
+        // 表示要求字符串中，是否包含连续三个a
+        // var patt = /a{3}/;
+        // 表示要求字符串中，字符串必须以a结尾
+        // var patt = /a$/;
+        // 表示要求字符串中，字符串必须以a开头
+        // var  patt = /^a/;
+        // 表示字符串必须重头到尾都必须完全匹配
+        // 要求字符串必须以a开头，长度介于3-5之间
+        var patt = /^a{3,5}$/;
+        var str = "aaaaag";
+        // var str = "ahdacjbsAh9_[]";
+        alert(patt.test(str));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

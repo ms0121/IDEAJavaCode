@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="38778988-b9b0-4dd4-bd4c-5ed9ea207038" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sptizovlyRuRFiekg1ZIo2Xzef" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Boot04InterceptorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot-04-interceptor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.Boot04InterceptorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38778988-b9b0-4dd4-bd4c-5ed9ea207038" name="Default Changelist" comment="" />
+      <created>1621581489095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621581489095</updated>
+      <workItem from="1621581491865" duration="2362000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1621582212225">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1621582212225" />
+    <state width="1322" height="166" key="GridCell.Tab.0.bottom" timestamp="1621584085479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="166" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621584085479" />
+    <state width="1322" height="166" key="GridCell.Tab.0.center" timestamp="1621584085479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="166" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621584085479" />
+    <state width="1322" height="166" key="GridCell.Tab.0.left" timestamp="1621584085479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="166" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621584085479" />
+    <state width="1322" height="166" key="GridCell.Tab.0.right" timestamp="1621584085479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="166" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621584085479" />
+    <state width="1322" height="166" key="GridCell.Tab.1.bottom" timestamp="1621583941663">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="166" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621583941663" />
+    <state width="1322" height="166" key="GridCell.Tab.1.center" timestamp="1621583941663">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="166" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1621583941663" />
+    <state width="1322" height="166" key="GridCell.Tab.1.left" timestamp="1621583941663">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="166" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1621583941663" />
+    <state width="1322" height="166" key="GridCell.Tab.1.right" timestamp="1621583941663">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="166" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1621583941663" />
+    <state x="53" y="64" key="new project wizard" timestamp="1621584084196">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="53" y="64" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1621584084196" />
+  </component>
+</project>

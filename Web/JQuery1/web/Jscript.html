@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生js</title>
+    <script type="text/javascript">
+
+        function $(eleId) {
+            return document.getElementById(eleId);
+        }
+
+        function fun1() {
+            var obj = $("txt1").value;
+            alert(obj);
+        }
+
+        function fun2() {
+            var obj = $("txt2").value;
+            alert(obj);
+        }
+
+
+    </script>
+
+</head>
+<body>
+<table>
+    用户名: <input type="text" id="txt1"><br>
+    性别:<input type="text" id="txt2"><br>
+    <input type="button" value="提交1" onclick="fun1()">
+    <input type="button" value="提交2" onclick="fun2()">
+</table>
+</body>
+</html>

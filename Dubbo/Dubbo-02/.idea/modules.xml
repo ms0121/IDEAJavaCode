@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/03-interface/03-interface.iml" filepath="$PROJECT_DIR$/03-interface/03-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-link-provider/04-link-provider.iml" filepath="$PROJECT_DIR$/04-link-provider/04-link-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-link-consumer/05-link-consumer.iml" filepath="$PROJECT_DIR$/05-link-consumer/05-link-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-zk-provider/06-zk-provider.iml" filepath="$PROJECT_DIR$/06-zk-provider/06-zk-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-zk-consumer/07-zk-consumer.iml" filepath="$PROJECT_DIR$/07-zk-consumer/07-zk-consumer.iml" />
+    </modules>
+  </component>
+</project>

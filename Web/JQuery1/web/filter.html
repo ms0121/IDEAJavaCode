@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter过滤器</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        // 加载页面
+        $(function () {
+            // 当页面dom对象加载后，给对象绑定单击事件，因为此时的button对象已经在内存中创建好了
+            $("#btn").click(function () {
+                // alert("单击事件")
+                var obj = $("div:last");
+                if (obj != null){
+                    alert("有值");
+                }else {
+                    alert("没有值");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <input type="button" value="按钮" id="btn">
+</body>
+</html>

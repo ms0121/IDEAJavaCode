@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+
+	//核心函数的4个作用
+	//传入参数为[函数]时：在文档加载完成后执行这个函数
+    // 表示页面加载完成之后。相当于 window.onload = function(){}
+
+    // 传统的做法
+    // window.onload = function () {  // 使用onclick必须先加载整个页面的信息
+    //     var btnObj = document.getElementById("btn");
+    //     btnObj.onclick = function () {
+    //         alert("我是一个按钮" + btnObj.innerHTML);
+    //     }
+    // }
+
+    // $(function () {
+    //    alert($("#btn"));  // 返回的是一个jQuery对象
+    // });
+
+	//传入参数为[HTML字符串]时：根据这个字符串创建元素节点对象
+    // 会对我们创建这个 html 标签对象,将生成的对象直接添加到body对象中，相当于加到下面的<body>
+    // $(function () {
+    //     alert($("<div>\n" +
+    //         "        <span>一个小标题</span>\n" +
+    //         "    </div>").appendTo("body"));
+    // });
+
+	//传入参数为[选择器字符串]时：根据这个字符串查找元素节点对象
+    // $(“#id 属性值”); id 选择器，根据 id 查询标签对象
+    // $(“标签名”); 标签名选择器，根据指定的标签名查询标签对象
+    // $(“.class 属性值”); 类型选择器，可以根据 class 属性查询标签对象
+    // $(function () {
+    //     alert($("button").length);
+    // });
+
+	// //传入参数为[DOM对象]时：将DOM对象包装为jQuery对象返回
+    $(function () { // 用来替换原来的window.onload()，页面加载器
+       var btnObj = document.getElementById("btn"); // dom对象
+       // alert(btnObj);
+        alert($(btnObj));  // 转为jQuery对象
+        alert($("#btn"));  // 直接返回的是jQuery对象
+
+        // 直接通过获取dom对象然后设置按钮的值
+        document.getElementById("btn").innerHTML = "lms你要努力学习";
+
+    });
+
+
+
+    </script>
+</head>
+<body>
+<!--
+    body顾名思义就是我们在页面上看得见的内容
+    head是隐藏的内容，用来修饰body页面的内容信息
+-->
+
+    <button id="btn"></button>
+
+<!--    <div>-->
+<!--        <span>一个小标题</span>-->
+<!--    </div>-->
+
+</body>
+</html>

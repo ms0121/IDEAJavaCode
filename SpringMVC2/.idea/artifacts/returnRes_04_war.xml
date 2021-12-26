@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="returnRes-04:war">
+    <output-path>$PROJECT_DIR$/returnRes-04/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>returnRes-04</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="returnRes-04-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="returnRes-04:war exploded" />
+    </root>
+  </artifact>
+</component>

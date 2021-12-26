@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bc84f346-33ef-4e60-b62a-69abc89634e8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mybatis-mapper" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="Tag Library Descriptor" />
+        <option value="mybatis-config" />
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/readme.txt" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/liu/domain/Student.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/liu/dao/StudentDao.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/liu/dao/StudentDao.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\E_DISK\Maven-Git\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ri8nHemxW98ruyBvktK4rgp15C" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\spring-mybatis\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SpringTest.test1">
+    <configuration name="SpringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.SpringTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.SpringTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringTest.test1" />
+        <item itemvalue="JUnit.SpringTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc84f346-33ef-4e60-b62a-69abc89634e8" name="Default Changelist" comment="" />
+      <created>1619447714099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619447714099</updated>
+      <workItem from="1619447719350" duration="1525000" />
+      <workItem from="1619449370073" duration="2650000" />
+      <workItem from="1619483369831" duration="8638000" />
+      <workItem from="1619492113260" duration="875000" />
+      <workItem from="1619493120067" duration="3502000" />
+      <workItem from="1619500443029" duration="667000" />
+      <workItem from="1619508232584" duration="116000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="171" y="43" key="#Inspections" timestamp="1619484295120">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="171" y="43" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1619484295120" />
+    <state x="275" y="21" key="#Project_Structure" timestamp="1619500505192">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1619500505192" />
+    <state x="412" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619447773448">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1619447773448" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1619485291370">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1619485291370" />
+    <state x="826" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619492894942">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="826" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619492894942" />
+    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1619508345444">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619508345444" />
+    <state width="1322" height="221" key="GridCell.Tab.0.bottom" timestamp="1619497711683">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="221" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619497711683" />
+    <state width="1322" height="221" key="GridCell.Tab.0.center" timestamp="1619497711683">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="221" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619497711683" />
+    <state width="1322" height="221" key="GridCell.Tab.0.left" timestamp="1619497711683">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="221" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619497711683" />
+    <state width="1322" height="221" key="GridCell.Tab.0.right" timestamp="1619497711683">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="221" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619497711683" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1619508289549">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619508289549" />
+    <state x="53" y="58" key="new project wizard" timestamp="1619508348524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="53" y="58" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1619508348524" />
+    <state x="683" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1619486160195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="683" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1619486160195" />
+  </component>
+</project>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-for="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--  分别引入vue和axios(实现ajax请求)  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+    <script src="axios.min.js"></script>
+
+</head>
+<body>
+    <div id="app">
+        <table>
+            <tr v-for="user in userList">
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <script >
+        var vm = new Vue({
+            el: "#app",
+            data:{
+                userList:[]
+            },
+            //页面渲染之前执行操作
+            created() {
+                // 调用该方法，得到后端返回的json数据信息
+                this.getList();
+            },
+            methods:{
+                //使用axios实现ajax请求，get("请求的地址")
+                getList(){
+                    axios.get("user.json")
+                    //  该请求地址执行成功执行的函数
+                    .then(response => {
+                        console.log(response);
+                        // 将请求成功的数组信息提取出来给data中的userList数组
+                        // this表示当前对象中的属性
+                        this.userList = response.data.data.items;
+                        // console.log(this.userList);
+                    })
+                    //  请求执行失败返回的信息
+                    .catch(error => {
+                        console.log(error)
+                    })
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

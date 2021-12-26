@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a957c739-2fe0-4851-98b9-f658f45a0416" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Maven-Git/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\E_DISK\Maven-Git\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sw9BzPYec13iDbPHvDdus2YzvM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.345977" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootDubboConsumerApplication">
+    <configuration name="SpringbootDubboConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-dubbo-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.SpringbootDubboConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDubboProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-dubbo-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.SpringbootDubboProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a957c739-2fe0-4851-98b9-f658f45a0416" name="Default Changelist" comment="" />
+      <created>1621772654773</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621772654773</updated>
+      <workItem from="1621772658794" duration="4628000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Project_Structure" timestamp="1621772787734">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1621772787734" />
+    <state x="800" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1621775932147">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="800" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1621775932147" />
+    <state x="723" y="138" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1621775558840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="723" y="138" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1621775558840" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1621777287005">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621777287005" />
+    <state width="1322" height="307" key="GridCell.Tab.0.bottom" timestamp="1621777311267">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="307" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621777311267" />
+    <state width="1322" height="307" key="GridCell.Tab.0.center" timestamp="1621777311267">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="307" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621777311267" />
+    <state width="1322" height="307" key="GridCell.Tab.0.left" timestamp="1621777311267">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="307" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621777311267" />
+    <state width="1322" height="307" key="GridCell.Tab.0.right" timestamp="1621777311267">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="307" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621777311267" />
+    <state width="1322" height="307" key="GridCell.Tab.1.bottom" timestamp="1621777255432">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="307" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621777255432" />
+    <state width="1322" height="307" key="GridCell.Tab.1.center" timestamp="1621777255431">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="307" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1621777255431" />
+    <state width="1322" height="307" key="GridCell.Tab.1.left" timestamp="1621777255431">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="307" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1621777255431" />
+    <state width="1322" height="307" key="GridCell.Tab.1.right" timestamp="1621777255431">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="307" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1621777255431" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1621772949715">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1621772949715" />
+    <state x="792" y="140" key="chooseDestDirectoryDialog" timestamp="1621775551062">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="792" y="140" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1621775551062" />
+    <state x="3" y="58" width="917" height="599" key="new project wizard" timestamp="1621777310065">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="3" y="58" width="917" height="599" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1621777310065" />
+  </component>
+</project>

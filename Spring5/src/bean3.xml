@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--   方式一 级联赋值的方式  -->
+    <!--    <bean id="emp" class="com.liu.spring.demo1.Emp">-->
+    <!--        <property name="name" value="张三"></property>-->
+    <!--        <property name="gender" value="男"></property>-->
+    <!--        <property name="dept" ref="dept1"></property>-->
+    <!--    </bean>-->
+    <!--    <bean id="dept1" class="com.liu.spring.demo1.Dept">-->
+    <!--        <property name="name" value="保安部"></property>-->
+    <!--    </bean>-->
+
+
+    <!--  方式二(内部bean的设置方式)  -->
+    <bean id="emp" class="com.liu.spring.demo1.Emp">
+        <property name="name" value="李素"></property>
+        <property name="gender" value="女"></property>
+        <!--    设置对象类型属性(内部bean)    -->
+        <property name="dept">
+            <bean id="dept1" class="com.liu.spring.demo1.Dept">
+                <property name="name" value="科技部"></property>
+            </bean>
+        </property>
+    </bean>
+
+</beans>

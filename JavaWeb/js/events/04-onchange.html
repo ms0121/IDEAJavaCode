@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onchang事件的实现</title>
+
+    <script type="text/javascript">
+        // 静态实现
+        function onchangFun() {
+            alert("女神已经发生了变化");
+        }
+
+        // 动态实现
+        window.onload = function () {
+            // 获取事件的标签对象
+            var id = document.getElementById("ss");
+            id.onchange = function () {
+                alert("选择已经发生了变化");
+            }
+        }
+    </script>
+</head>
+<body>
+<!--静态测试-->
+    <select onchange="onchangFun();">
+        <option>---select---</option>
+        <option>zhang</option>
+        <option>li</option>
+        <option>dh</option>
+    </select>
+
+<!--    动态测试-->
+    <select id="ss">
+        <option>---select---</option>
+        <option>wu</option>
+        <option>si</option>
+        <option>ff</option>
+    </select>
+</body>
+</html>

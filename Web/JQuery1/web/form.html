@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单选择器</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        function fun1() {
+            // 读取所有的单行文本框，获取到jQuery对象，是一个数组
+            var txtObt = $(":text");
+            for (var i = 0; i<txtObt.length;i++){
+                // 将jQuery对象转为dom对象，从而获取值
+                var obj = txtObt[i];
+                alert(obj.value);
+            }
+        }
+
+        function fun2() {
+            // 读取所有的单行文本框，获取到jQuery对象，是一个数组
+            var txtObt = $(":radio");
+            for (var i = 0; i<txtObt.length;i++){
+                // 将jQuery对象转为dom对象，从而获取值
+                // var obj = txtObt[i];
+                // alert(obj.value);
+                // 直接使用jQuery对象的方式进行读取数据信息
+                alert(txtObt.val());
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h3>表单选择器</h3>
+
+    <form>
+        <div>
+            用户名: <input type="text"><br>
+            密码: <input type="text">
+            <input type="button" value="读取text的值" id="btn1" onclick="fun1()">
+        </div>
+        <hr>
+        <div>
+            性别：
+            <input type="radio" value="man">男
+            <input type="radio" value="women">女
+            <input type="button" value="读取单选框的值" id="btn2" onclick="fun2()">
+        </div>
+
+        <!-- 获取所有div值的方式(标签选择器): $("div")  -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </form>
+</body>
+</html>

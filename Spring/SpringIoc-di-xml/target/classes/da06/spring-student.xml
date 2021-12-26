@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- 其他属性按照类型进行注入   -->
+    <bean id="student" class="com.liu.da06.Student" autowire="byType">
+        <property name="name" value="张飒"/>
+        <property name="age"  value="21"/>
+        <!--  引用类型，直接使用自动注入的方式 -->
+        <!--   <property name="school" ref="school"/>  &lt;!&ndash; 等价于setSchool(school)&ndash;&gt;-->
+    </bean>
+
+
+</beans>
+
+

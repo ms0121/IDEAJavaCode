@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ab3c95e5-9f95-41a4-b3c5-3fe721947f64" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="201TRu7PytwdCVGWtYspFzfqmZb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Joffer" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3689655" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.liu.es02.config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.liu.es" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\ElasticSearch\es-jd\src\main\resources\static\js" />
+      <recent name="D:\E_DISK\IDEAJavaCode\ElasticSearch\es-jd\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EsJdApplication">
+    <configuration name="JsoupUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liu.utils.JsoupUtils" />
+      <module name="es-jd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Es02ApplicationTests.deleteDocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="es02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.es02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.es02" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.es02.Es02ApplicationTests" />
+      <option name="METHOD_NAME" value="deleteDocTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Es02ApplicationTests.getDocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="es02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.es02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.es02" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.es02.Es02ApplicationTests" />
+      <option name="METHOD_NAME" value="getDocTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Es02ApplicationTests.updateDocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="es02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.es02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.es02" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.es02.Es02ApplicationTests" />
+      <option name="METHOD_NAME" value="updateDocTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyJobTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="es02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.es02.job.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.es02.config" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.es02.config.MyJobTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Es02Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="es02" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.es02.Es02Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Es03JdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="es03-jd" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.Es03JdApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EsJdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="es-jd" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.EsJdApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JsoupUtils" />
+        <item itemvalue="JUnit.MyJobTest.test01" />
+        <item itemvalue="JUnit.Es02ApplicationTests.deleteDocTest" />
+        <item itemvalue="JUnit.Es02ApplicationTests.getDocTest" />
+        <item itemvalue="JUnit.Es02ApplicationTests.updateDocTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab3c95e5-9f95-41a4-b3c5-3fe721947f64" name="Default Changelist" comment="" />
+      <created>1635211089052</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635211089052</updated>
+      <workItem from="1635211092778" duration="1863000" />
+      <workItem from="1635222758511" duration="5096000" />
+      <workItem from="1635246575745" duration="6311000" />
+      <workItem from="1635291160152" duration="685000" />
+      <workItem from="1635338133245" duration="4556000" />
+      <workItem from="1635512706422" duration="43000" />
+      <workItem from="1635664343637" duration="9256000" />
+      <workItem from="1635678896379" duration="2113000" />
+      <workItem from="1635770280080" duration="53000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Project_Structure" timestamp="1635211149997">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1635211149997" />
+    <state x="488" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1635338491090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1635338491090" />
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1635674686973">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1635674686973" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1635770330629">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1635770330629" />
+    <state width="1322" height="351" key="GridCell.Tab.0.bottom" timestamp="1635681100483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="351" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1635681100483" />
+    <state width="1322" height="351" key="GridCell.Tab.0.center" timestamp="1635681100483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="351" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1635681100483" />
+    <state width="1322" height="351" key="GridCell.Tab.0.left" timestamp="1635681100483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="351" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1635681100483" />
+    <state width="1322" height="351" key="GridCell.Tab.0.right" timestamp="1635681100483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="351" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1635681100483" />
+    <state width="1322" height="351" key="GridCell.Tab.1.bottom" timestamp="1635681100483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="351" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1635681100483" />
+    <state width="1322" height="351" key="GridCell.Tab.1.center" timestamp="1635681100483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="351" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1635681100483" />
+    <state width="1322" height="351" key="GridCell.Tab.1.left" timestamp="1635681100483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="351" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1635681100483" />
+    <state width="1322" height="351" key="GridCell.Tab.1.right" timestamp="1635681100483">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="351" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1635681100483" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1635664425128">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1635664425128" />
+    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1635338545481">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1635338545481" />
+    <state x="290" y="60" width="786" height="608" key="find.popup" timestamp="1635254422648">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="290" y="60" width="786" height="608" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1635254422648" />
+    <state x="274" y="59" width="934" height="612" key="new project wizard" timestamp="1635664420735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="59" width="934" height="612" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1635664420735" />
+    <state x="756" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1635338698415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="756" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1635338698415" />
+  </component>
+</project>

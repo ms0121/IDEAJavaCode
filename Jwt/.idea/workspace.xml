@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d58850c-6cbf-4da9-8a19-2e2750d140e4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mybatis-mapper" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Maven-Git/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\E_DISK\Maven-Git\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1yuMPgSbmL2QkmtQNQB3SpXE31S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringMVCPlus" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.22643678" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.Security01Application">
+    <configuration name="JwtApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jwt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.jwt.JwtApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtApplicationTests.createToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jwt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.jwt.JwtApplicationTests" />
+      <option name="METHOD_NAME" value="createToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jwt" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.jwt.JwtApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Security01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="security01" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.security.Security01Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Security02Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="security02" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.security.Security02Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="session" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.session.SessionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JwtApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.JwtApplicationTests.createToken" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d58850c-6cbf-4da9-8a19-2e2750d140e4" name="Default Changelist" comment="" />
+      <created>1633096996181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633096996181</updated>
+      <workItem from="1633097001372" duration="1415000" />
+      <workItem from="1633133381759" duration="9443000" />
+      <workItem from="1633154862422" duration="1047000" />
+      <workItem from="1633164723411" duration="2436000" />
+      <workItem from="1633173038414" duration="10291000" />
+      <workItem from="1633187462704" duration="1431000" />
+      <workItem from="1633581417944" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Project_Structure" timestamp="1633097071204">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1633097071204" />
+    <state x="872" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1633186142554">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="872" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1633186142554" />
+    <state x="389" y="269" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1633164406165">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="269" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1366.728@0.0.1366.728" timestamp="1633164406165" />
+    <state x="472" y="269" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1633164401576">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="472" y="269" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1633164401576" />
+    <state x="463" y="53" key="FileChooserDialogImpl" timestamp="1633581462807">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="53" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1633581462807" />
+    <state width="1322" height="402" key="GridCell.Tab.0.bottom" timestamp="1633188914124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="402" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1633188914124" />
+    <state width="1322" height="402" key="GridCell.Tab.0.center" timestamp="1633188914124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="402" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1633188914124" />
+    <state width="1322" height="402" key="GridCell.Tab.0.left" timestamp="1633188914124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="402" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1633188914124" />
+    <state width="1322" height="402" key="GridCell.Tab.0.right" timestamp="1633188914124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="402" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1633188914124" />
+    <state width="1322" height="402" key="GridCell.Tab.1.bottom" timestamp="1633188914124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="402" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1633188914124" />
+    <state width="1322" height="402" key="GridCell.Tab.1.center" timestamp="1633188914124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="402" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1633188914124" />
+    <state width="1322" height="402" key="GridCell.Tab.1.left" timestamp="1633188914124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="402" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1633188914124" />
+    <state width="1322" height="402" key="GridCell.Tab.1.right" timestamp="1633188914124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="402" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1633188914124" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1633188282695">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1633188282695" />
+    <state x="212" y="45" width="908" height="599" key="new project wizard" timestamp="1633187703566">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="212" y="45" width="908" height="599" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1633187703566" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1633139550674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1633139550674" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1633166491827">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1633166491827" />
+  </component>
+</project>

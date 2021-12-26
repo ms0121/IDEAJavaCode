@@ -1,0 +1,16 @@
+person:
+  id: 1001
+  name: 张三
+  age: 19
+  hooby:
+    - 学习
+    - 旅游
+    - 睡觉
+  grade:
+    sub1: 90
+    sub2: 100
+    sub3: 99
+
+spring:
+  profiles:
+    active: dev

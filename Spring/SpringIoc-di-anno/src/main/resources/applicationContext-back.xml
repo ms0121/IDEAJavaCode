@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--
+         声明组件扫描器（component-scan）,组件就是java对象
+         base-package: 指明注解在项目中的包名（就是告诉spring到指定的这个包中查找）
+         component-scan的工作方式：spring会扫描遍历base-package指定的包。把包中和子包中的所有类，
+            找到类中的注解，按照注解的功能创建对象，或给属性赋值
+
+         加入了 component-scan 标签，配置文件的变化：
+         1.加入了一个新的约束文件spring-context.xsd
+         2.给这个新的约束文件起一个命名空间的名称
+    -->
+
+    <context:component-scan base-package="com.liu.ba01"/>
+
+<!--  指定多个包的三种方式  -->
+<!--    1. 使用多次组件扫描器，指定不同的包-->
+    <context:component-scan base-package="com.liu.ba01"/>
+    <context:component-scan base-package="com.liu.ba02"/>
+
+<!--    2. 使用分隔符 （；或 ，）分割多个包名-->
+    <context:component-scan base-package="com.liu.ba01;com.liu.ba02"/>
+
+<!--    3. 指定父包 -->
+    <context:component-scan base-package="com.liu"/>
+
+
+
+
+
+</beans>

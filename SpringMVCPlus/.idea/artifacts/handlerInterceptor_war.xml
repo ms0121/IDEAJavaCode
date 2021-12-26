@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="handlerInterceptor:war">
+    <output-path>$PROJECT_DIR$/handlerInterceptor/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>handlerInterceptor</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="handlerInterceptor.war">
+      <element id="artifact" artifact-name="handlerInterceptor:war exploded" />
+    </root>
+  </artifact>
+</component>

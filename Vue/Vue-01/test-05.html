@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+<!--        对象拓展运算符-->
+        let person1 = {name:"zhangsan", age:14};
+        let someone1 = {...person1};
+        console.log(someone1);
+
+        let name = {name: "lisi"};
+        let age = {age: 23};
+        let someone2 = {...name, ...age};
+        console.log(someone2);
+
+
+    </script>
+</body>
+</html>

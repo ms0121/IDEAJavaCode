@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            // 获取/设值文本的值
+            $("#btn1").click(function () {
+                // 获取/设值文本的值,val()
+                var all = $(":text").val();
+                alert(all);
+
+            });
+
+
+            // 获取div的值
+            $("#btn2").click(function () {
+                // 获取标签中的值
+                alert($("div:last").text());
+                // 给第一个div进行设置值
+                $("div:first").text("我是第一位");
+
+            })
+
+
+
+
+
+
+        })
+    </script>
+</head>
+<body>
+    <p>文本框</p>
+    <input type="text" value="a"><br>
+    <input type="text" value="b"><br>
+    <input type="text" value="c"><br>
+
+    <p>文本数据</p>
+    <div>我是第一个div</div>
+    <div>我是第二个div</div>
+    <div>我是第三个div</div>
+
+
+    <button id="btn1" >获取text文本的值</button><br>
+    <button id="btn2" >获取div的值</button><br>
+</body>
+</html>

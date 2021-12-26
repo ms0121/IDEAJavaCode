@@ -1,0 +1,13 @@
+各种锁的理解：
+
+ 1.公平锁和非公平锁
+    公平锁：非常的公平，不能够插队，必须先进先出
+    public ReentrantLock(boolean fair) {
+            sync = fair ? new FairSync() : new NonfairSync();
+    }
+
+
+    非公平锁：不公平，可以进行插队（默认使用的都是非公平锁）
+     public ReentrantLock() {
+            sync = new NonfairSync();
+    }

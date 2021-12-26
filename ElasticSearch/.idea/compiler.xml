@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="es-jd" />
+        <module name="es03-jd" />
+        <module name="es02" />
+        <module name="es01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="es-jd" target="1.8" />
+      <module name="es01" target="1.8" />
+      <module name="es02" target="1.8" />
+      <module name="es03-jd" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="es-jd" options="-parameters" />
+      <module name="es02" options="-parameters" />
+      <module name="es03-jd" options="-parameters" />
+    </option>
+  </component>
+</project>

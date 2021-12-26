@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e476aeb-7525-4d07-a1d6-f46c2198cb13" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mybatis-mapper" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="20SFXhdyrHGKsFYtKj5STtNoO5g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\boot2\ssm\src\main\resources\mappers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\boot2\ssm\src\main\java\com\liu\ssm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BootSqlApplication">
+    <configuration name="BootSqlApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boot-sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.bootsql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.bootsql" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.bootsql.BootSqlApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootSqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot-sql" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.bootsql.BootSqlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ssm" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.ssm.SsmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BootSqlApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e476aeb-7525-4d07-a1d6-f46c2198cb13" name="Default Changelist" comment="" />
+      <created>1636030122494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636030122494</updated>
+      <workItem from="1636030126068" duration="801000" />
+      <workItem from="1636032405081" duration="5017000" />
+      <workItem from="1636077971640" duration="12731000" />
+      <workItem from="1636456932095" duration="377000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Project_Structure" timestamp="1636030238210">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1636030238210" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1636087372247">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1636087372247" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1636037037750">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1636037037750" />
+    <state width="1322" height="388" key="GridCell.Tab.0.bottom" timestamp="1636457314345">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1636457314345" />
+    <state width="1322" height="388" key="GridCell.Tab.0.center" timestamp="1636457314345">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1636457314345" />
+    <state width="1322" height="388" key="GridCell.Tab.0.left" timestamp="1636457314345">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1636457314345" />
+    <state width="1322" height="388" key="GridCell.Tab.0.right" timestamp="1636457314345">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1636457314345" />
+    <state width="1322" height="388" key="GridCell.Tab.1.bottom" timestamp="1636457314360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1636457314360" />
+    <state width="1322" height="388" key="GridCell.Tab.1.center" timestamp="1636457314360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1636457314360" />
+    <state width="1322" height="388" key="GridCell.Tab.1.left" timestamp="1636457314345">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1636457314345" />
+    <state width="1322" height="388" key="GridCell.Tab.1.right" timestamp="1636457314360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1636457314360" />
+    <state width="1322" height="388" key="GridCell.Tab.2.bottom" timestamp="1636457314360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1636457314360" />
+    <state width="1322" height="388" key="GridCell.Tab.2.center" timestamp="1636457314360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1636457314360" />
+    <state width="1322" height="388" key="GridCell.Tab.2.left" timestamp="1636457314360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1636457314360" />
+    <state width="1322" height="388" key="GridCell.Tab.2.right" timestamp="1636457314360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="388" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1636457314360" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1636082220896">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1636082220896" />
+    <state x="54" y="0" key="new project wizard" timestamp="1636082215656">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="54" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1636082215656" />
+  </component>
+</project>

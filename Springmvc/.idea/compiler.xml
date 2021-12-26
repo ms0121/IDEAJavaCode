@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ssm2" />
+        <module name="interceptor_permission_10" />
+        <module name="springmvc_01" />
+        <module name="returnRes_04" />
+        <module name="interceptor2_09" />
+        <module name="interceptor_08" />
+        <module name="receiveParam_03" />
+        <module name="url-pattern_05" />
+        <module name="requestMapping" />
+        <module name="exception_handler_07" />
+        <module name="forward_redirect_06" />
+        <module name="ssm" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="exception_handler_07" target="1.8" />
+      <module name="forward_redirect_06" target="1.8" />
+      <module name="interceptor2_09" target="1.8" />
+      <module name="interceptor_08" target="1.8" />
+      <module name="interceptor_permission_10" target="1.8" />
+      <module name="receiveParam_03" target="1.8" />
+      <module name="requestMapping" target="1.8" />
+      <module name="returnRes_04" target="1.8" />
+      <module name="returnRes_04 (1)" target="1.8" />
+      <module name="springmvc_01" target="1.8" />
+      <module name="ssm" target="1.8" />
+      <module name="ssm2" target="1.8" />
+      <module name="url-pattern_05" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

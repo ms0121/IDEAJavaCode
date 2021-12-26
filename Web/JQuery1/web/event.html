@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            // 处理单击事件
+            $("#btn1").on("click", function () {
+                // 动态的创建一个按钮
+                $("#mydiv").append("<button id=\'newBtn\'>新按钮</button>");
+                $("#newBtn").click(function () {
+                    alert("新按钮被点击了");
+                })
+            })
+        })
+
+    </script>
+
+
+</head>
+<body>
+    <div id="mydiv"> </div><br>
+    <p>你可以点击试一下?</p><br>
+    <button id="btn1">动态的添加按钮</button>
+</body>
+</html>

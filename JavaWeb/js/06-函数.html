@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+
+    <script type="text/javascript">
+        // 使用的格式如下:
+        //     function 函数名(形参列表){
+        //         函数体
+        //     }
+        // 在 JavaScript 语言中，如何定义带有返回值的函数？
+        // 只需要在函数体内直接使用 return 语句返回值即可！
+        // 不允许出现重载,如果出现了重载，就会将原来的函数进行覆盖
+
+        function f1() {
+            alert("无参函数被调用了");
+        }
+        // f1();
+
+        function f2(a, b) {
+            alert("有参函数被调用了, a = " +  a + ", b = " + b);
+        }
+        // f2(10, "abc");
+
+        function f3(a, b) {
+            alert("有返回值的函数被调用了");
+            return a + b;
+        }
+        // alert(f3(10, 78));
+
+        // 函数定义的第二种方式
+        var f5 = function () {
+            alert("无参函数");
+        }
+        // f5();
+
+        var f6 = function (a, b) {
+            alert("有参函数, a" + a + ", b = " + b);
+        }
+        // f6(89, "hjdhsj");
+
+
+        var f7 = function (a, b) {
+            return a + b;
+        }
+
+        var sum = f7(89, 12);
+        alert("有返回值的函数:  " + sum);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

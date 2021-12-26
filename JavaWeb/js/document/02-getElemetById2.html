@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取输入框中的内容</title>
+
+    <script type="text/javascript">
+        // document.getElementById(elementId)
+        // 通过标签的 id 属性查找标签 dom 对象，elementId 是标签的 id 属性值
+        // document.getElementsByName(elementName)
+        // 通过标签的 name 属性查找标签 dom 对象，elementName 标签的 name 属性值
+        // document.getElementsByTagName(tagname)
+        // 通过标签名查找标签 dom 对象。tagname 是标签名
+        // document.createElement( tagName)
+        // 方法，通过给定的标签名，创建一个标签对象。tagName 是要创建的标签名
+        // 注：
+        // document 对象的三个查询方法，如果有 id 属性，优先使用 getElementById 方法来进行查询
+        // 如果没有 id 属性，则优先使用 getElementsByName 方法来进行查询
+        // 如果 id 属性和 name 属性都没有最后再按标签名查 getElementsByTagName
+        // 以上三个方法，一定要在页面加载完成之后执行，才能查询到标签对象。
+
+        /*
+        * 需求：当用户点击了较验按钮，要获取输出框中的内容。然后验证其是否合法。<br/>
+        * 验证的规则是：必须由字母，数字。下划线组成。并且长度是 5 到 12 位。
+        * */
+        function onclikFun() {
+            // / 1 当我们要操作一个标签的时候，一定要先获取这个标签对象
+            var userObj = document.getElementById("username");
+            // [object HTMLInputElement] 它就是 dom 对象,并通过value属性获取到input标签栏中的值
+            var userText = userObj.value;
+
+            // 获取指定span标签的对象
+            var usernameSpanObj = document.getElementById("usernameSpan");
+
+            // / 如何 验证 字符串，符合某个规则 ，需要使用正则表达式技术
+            var patt = /^\w{5,12}$/;
+
+            /*
+            * test()方法用于测试某个字符串，是不是匹配我的规则 ，
+            * 匹配就返回 true。不匹配就返回 false.
+            * */
+            if (patt.test(userText)) {
+                // alert("成功进行输入: " + userText);
+                // innerHTML 表示起始标签和结束标签中的内容
+                // usernameSpanObj.innerHTML = "用户名存在!";
+                usernameSpanObj.innerHTML = "<img src=\"right.png\" height=\"14\" width=\"14\">";
+            } else {
+                // alert("非法输入!");
+                // usernameSpanObj.innerHTML = "用户名不存在!";
+                usernameSpanObj.innerHTML = "<img src=\"wrong.png\" height=\"14\" width=\"14\">";
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <!--当前的value值属于默认值设置-->
+    用户名: <input type="text" id="username" value="">
+
+    <span id="usernameSpan" style="color: red">
+
+    </span>
+
+    <button onclick="onclikFun()">校验</button>
+</body>
+</html>

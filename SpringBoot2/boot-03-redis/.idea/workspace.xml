@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2abd24e0-e629-494b-8d1b-17083b3e1c6f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1spihToA8EJ38Bb9yEIxID8RI3j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.liu.boot.service.Impl" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Boot03RedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot-03-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.Boot03RedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2abd24e0-e629-494b-8d1b-17083b3e1c6f" name="Default Changelist" comment="" />
+      <created>1621576050261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621576050261</updated>
+      <workItem from="1621576053911" duration="3724000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1621578730164">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1621578730164" />
+    <state width="1322" height="345" key="GridCell.Tab.0.bottom" timestamp="1621581490227">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="345" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621581490227" />
+    <state width="1322" height="345" key="GridCell.Tab.0.center" timestamp="1621581490227">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="345" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621581490227" />
+    <state width="1322" height="345" key="GridCell.Tab.0.left" timestamp="1621581490227">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="345" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621581490227" />
+    <state width="1322" height="345" key="GridCell.Tab.0.right" timestamp="1621581490227">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="345" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621581490227" />
+    <state width="1322" height="345" key="GridCell.Tab.1.bottom" timestamp="1621580219606">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="345" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621580219606" />
+    <state width="1322" height="345" key="GridCell.Tab.1.center" timestamp="1621580219606">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="345" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1621580219606" />
+    <state width="1322" height="345" key="GridCell.Tab.1.left" timestamp="1621580219606">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="345" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1621580219606" />
+    <state width="1322" height="345" key="GridCell.Tab.1.right" timestamp="1621580219606">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="345" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1621580219606" />
+    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1621578724286">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1621578724286" />
+    <state x="237" y="64" width="1075" height="599" key="new project wizard" timestamp="1621581488915">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="237" y="64" width="1075" height="599" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1621581488915" />
+  </component>
+</project>

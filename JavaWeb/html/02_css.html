@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS格式使用的方式</title>
+
+    <style type="text/css">
+        /*css的注释方式，跟java类似,
+        这里边写css代码，然后对所有的div执行div框中所有的操作
+        问题：这种方式的缺点。
+            1.只能在同一页面内复用代码，不能在多个页面中复用 css 代码。
+            2.维护起来不方便，实际的项目中会有成千上万的页面，要到每个页面中去修改。工作量太大了。
+        */
+        div{
+            border: 1px solid red;"
+        }
+
+        span{
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <div>div标签1</div>
+    <div>div标签2</div>
+    <span>span标签1</span>
+    <span>span标签2</span>
+</body>
+</html>

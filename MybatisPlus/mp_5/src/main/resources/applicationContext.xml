@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+
+	<!-- 数据源 -->
+	<context:property-placeholder location="classpath:db.properties"/>
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}"/>
+		<property name="jdbcUrl" value="${jdbc.url}"/>
+		<property name="user" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+	<!-- 事务管理器 -->
+	<bean id="dataSourceTransactionManager" 
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	<!-- 基于注解的事务管理 -->
+	<tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>
+	
+	
+	<!--
+		配置MybatisPlus的方式直接在MyBatis的基础上进行将 SqlSessionFactoryBean 修改为Mp的 MybatisSqlSessionFactoryBean
+		mybatis配置SqlSessionFactoryBean
+		Mybatis提供的: org.mybatis.spring.SqlSessionFactoryBean
+		MP提供的:com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean
+	 -->
+	<bean id="sqlSessionFactoryBean" class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
+		<!-- 数据源 -->
+		<property name="dataSource" ref="dataSource"/>
+		<property name="configLocation" value="classpath:mybatis-config.xml"/>
+		<!-- 别名处理 -->
+		<property name="typeAliasesPackage" value="com.liu.mp.beans"/>
+		
+		<!-- 注入全局MP策略配置 -->
+		<property name="globalConfig" ref="globalConfiguration"/>
+
+		<!-- 插件注册 -->
+		<property name="plugins">
+			<list>
+				<!-- 注册分页插件 -->
+				<bean class="com.baomidou.mybatisplus.plugins.PaginationInterceptor"/>
+
+				<!-- 注册执行分析插件,开启禁止删除全表的操作-->
+				<bean class="com.baomidou.mybatisplus.plugins.SqlExplainInterceptor">
+					<property name="stopProceed" value="true"/>
+				</bean>
+
+				<!-- 注册性能分析插件 -->
+				<bean class="com.baomidou.mybatisplus.plugins.PerformanceInterceptor">
+					<property name="format" value="true"/>
+					<!-- <property name="maxTime" value="100"></property> -->
+				</bean>
+
+				<!-- 注册乐观锁插件 -->
+				<bean class="com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor">
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+
+
+
+	<!-- 定义MybatisPlus的全局策略配置, 有了这些配置策略，就可以不需要在bean中添加相应的注解信息-->
+	<bean id ="globalConfiguration" class="com.baomidou.mybatisplus.entity.GlobalConfiguration">
+		<!-- 在2.3版本以后，dbColumnUnderline 默认值就是true，表是开启驼峰命名的方式
+		 	处理数据库表中的列名和实体类中的属性名之间的对应，比如(开启之后可以映射):last_name -> lastName
+		 -->
+		<property name="dbColumnUnderline" value="true"/>
+		<!-- 全局的主键策略 -->
+		<property name="idType" value="0"/>
+		<!-- 全局的数据库表的前缀策略配置(数据库表都有想用的前缀) -->
+		<property name="tablePrefix" value="tbl_"/>
+		<!--注入逻辑删除的操作-->
+		<property name="sqlInjector" ref="logicSqlInjector"/>
+		<!--注入逻辑删除的全局值，删除设置为-1,1代表未删除-->
+		<property name="logicDeleteValue" value="-1"/>
+		<property name="logicNotDeleteValue" value="1"/>
+
+	</bean>
+
+	<!--逻辑删除-->
+	<bean id="logicSqlInjector" class="com.baomidou.mybatisplus.mapper.LogicSqlInjector"/>
+
+
+	<!--
+		配置mybatis 扫描mapper接口的路径
+	 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.liu.mp.mapper"/>
+	</bean>
+
+</beans>

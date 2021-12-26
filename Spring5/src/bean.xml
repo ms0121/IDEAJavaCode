@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="com.liu.spring.pojo.Person"></bean>
+
+    <!-- 在 spring 配置文件配置对象的创建，以及对属性注入设置    -->
+    <bean id="user" class="com.liu.spring.pojo.User">
+        <!--使用 property 完成属性注入
+            name：类里面属性名称
+            value：向属性注入的值
+        -->
+        <property name="name" value="zhangsan"></property>
+        <property name="age" value="20"></property>
+
+    </bean>
+
+    <!--  使用spring实现有参构造方法  -->
+    <bean id="order" class="com.liu.spring.pojo.Order">
+        <constructor-arg name="name" value="java从入门到放弃"></constructor-arg>
+        <constructor-arg name="price" value="20"></constructor-arg>
+    </bean>
+
+</beans>

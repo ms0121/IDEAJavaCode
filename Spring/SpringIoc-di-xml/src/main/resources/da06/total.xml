@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        声明Student对象：
+        注入：就是赋值的意思
+        简单类型：spring中规定Java的基本数据类型和string类型都是简单类型
+        di:给属性赋值
+         1.set注入（设值注入）：spring调用类的set方法（只要有set方法即可，不管是否有该属性），就可以在set方法中完成属性赋值
+                1)简单的类型的set注入
+                <bean id="xx" class="yyy">
+                    <property name="属性名字" value="此属性的值"/>
+                    <property .../>
+                </bean>
+
+                2）. 包含引用类型的set注入方式，
+                <bean id="xx" class="yyy">
+                    <property name="属性名字" ref="bean的id（对象的名称）"/>
+                </bean>
+
+         2. 构造注入：spring调用类有参构造方法，在创建对象的同时，在构造方法中给属性赋值
+                构造注入使用<constructor-arg/>标签
+                <constructor-arg/>标签：一个<constructor-arg/>表示构造方法中的一个参数
+                <constructor-arg/>标签属性：
+                    name：表示使用构造方法的形参名
+                    index：表示构造方法的参数的位置，参数从左到右的位置是0，1,2，的顺序
+                    value: 构造方法的形参类型是简单类型的，使用value
+                    ref：构造方法的形参类型是引用类型的，使用ref
+
+            引用类型的自动注入：spring框架根据某些规则可以给引用类型赋值，不用你再给引用类型进行赋值，
+            使用的规则常用的是byName，byType
+            1. byName:(按名称注入):java类中引用类型的属性名词和spring容器中（配置文件）
+                                  <bean>的id名称是一致的。并且数据类型是一致的，这样的容器中bean，spring
+                                  能够赋值给引用类型
+                语法：
+                 <bean id="xx" class="yy" autowire="byName">
+                    简单属性类型赋值
+                 </bean>
+
+
+             2. byType:(按类型注入):java类中引用类型的数据类型和spring容器中（配置文件）
+                                  <bean>的class类型是一致的。这样的容器中bea能够赋值给引用类型
+
+                同源等于一类的意思：
+                    1.java类中引用类型的数据类型和bean的class的值是一样的
+                    2.java类中引用类型的数据类型和bean的class的父子类关系是一样的（只能保留一个bean）
+                    3.java类中引用类型的数据类型和bean的class的值接口和实现类是一样的
+
+                语法：
+                 <bean id="xx" class="yy" autowire="byType">
+                    简单属性类型赋值
+                 </bean>
+            -->
+
+    <!--
+    1. total.xml表示主配置文件：包含其他的配置文件，主配置文件一般是补丁已对象的
+        语法：<import resource="其他配置文件的路径"/>
+        关键字："classpath:" 表示类路径（class文件所在的目录）
+            在spring的配置文件中要制定其他文件的位置，需要使用classpath，告诉
+            spring到哪里去加载并读取文件
+
+        在包含关系的配置文件中，可以使用通配符(*:表示任意字符)
+        注意：主的配置文件名不能包含在通配符的范围之内(即不能叫做spring-total.xml)
+
+     -->
+    <import resource="classpath:da06/spring-*.xml"/>
+
+
+
+
+</beans>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- 分别给Stu类的对象进行设置属性值，包括数组，list，map等的设置   -->
+    <bean id="stu" class="com.liu.spring.demo2.Stu">
+        <!--        给数组进行赋值-->
+        <property name="courses">
+            <array>
+                <value>语文</value>
+                <value>数学</value>
+                <value>英语</value>
+            </array>
+        </property>
+
+        <!--    给list进行赋值    -->
+        <property name="grades">
+            <list>
+                <value>89</value>
+                <value>90</value>
+                <value>67</value>
+            </list>
+        </property>
+
+        <!--        给map进行赋值-->
+        <property name="gg">
+            <map>
+                <entry key="1" value="90"></entry>
+                <entry key="2" value="100"></entry>
+                <entry key="3" value="89"></entry>
+            </map>
+        </property>
+
+        <!--        演示在集合中注入对象类型的数据信息-->
+        <property name="courseList">
+            <list>
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+                <ref bean="course3"></ref>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--    设置course类型的属性信息-->
+    <bean id="course1" class="com.liu.spring.demo2.Course">
+        <property name="name" value="数学"></property>
+    </bean>
+
+    <bean id="course2" class="com.liu.spring.demo2.Course">
+        <property name="name" value="语文"></property>
+    </bean>
+
+    <bean id="course3" class="com.liu.spring.demo2.Course">
+        <property name="name" value="英语"></property>
+    </bean>
+</beans>

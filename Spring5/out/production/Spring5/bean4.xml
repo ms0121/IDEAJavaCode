@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="dog" class="com.liu.spring.pojo.Dog">
+            <property name="name" value="旺财"></property>
+            <property name="age"   value="3"></property>
+            <!--     给属性设置空值null       -->
+            <property name="color" ><null/></property>
+
+            <!--     属性值包含特殊字符
+                        1. 先把 特殊符号<>进行转义
+                        2.把带有特殊符号的内容写到CDATA中去
+                  -->
+<!--            <property name="address">-->
+<!--                <value><![CDATA[<<南京>>]]></value>-->
+<!--            </property>-->
+<!--            或者使用转义字符-->
+            <property name="address" value="&lt;&lt;南京&gt;&gt;"></property>
+        </bean>
+</beans>

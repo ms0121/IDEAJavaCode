@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-boot-received/rabbitmq-boot-received.iml" filepath="$PROJECT_DIR$/rabbitmq-boot-received/rabbitmq-boot-received.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-boot-send/rabbitmq-boot-send.iml" filepath="$PROJECT_DIR$/rabbitmq-boot-send/rabbitmq-boot-send.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!--  生命服务提供者的名称，保证他的唯一性，它是dubbo内部使用的唯一标识符  -->
+    <dubbo:application name="04-link-provider" />
+
+    <!-- 指定dubbo的协议名称和端口号
+        name：指定使用的协议名称，官方推荐使用dubbo
+        port：协议的端口号，默认是20880
+    -->
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+    <!--
+        暴露的服务：dubbo:service
+        interface：暴露服务的接口权限定名称
+        ref：引用接口在spring容器中的标示名称
+        register：使用直连的方式，不能使用注册，值为："N/A"
+    -->
+    <dubbo:service interface="com.liu.dubbo.service.SomeService"
+                   ref="someServiceImpl" register="N/A"/>
+
+    <!-- 将接口的实现类注册到容器中,也可以直接在类的上面添加注解的方式   -->
+    <bean id="someServiceImpl" class="com.liu.dubbo.service.impl.SomeServiceImpl"/>
+</beans>

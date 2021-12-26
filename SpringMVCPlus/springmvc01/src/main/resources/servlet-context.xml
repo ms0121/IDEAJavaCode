@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- 声明组件扫描器   -->
+    <context:component-scan base-package="com.liu.springmvc.controller"/>
+
+    <!--使用默认的servlet来响应静态文件-->
+    <mvc:default-servlet-handler/>
+
+    <!--   开启注解驱动 -->
+    <mvc:annotation-driven>
+        <!--     mvc的处理器与适配器的配置   -->
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!-- 声明springmvc框架中的视图解析器，帮助开发人员
+        设置视图文件的路径-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 前缀：视图文件的路径 -->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!-- 后缀：视图文件的拓展名 -->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--        配置拦截器，方式一：拦截所有的请求，表示哪些路径下的请求会被拦截-->
+    <!--    <mvc:interceptors>-->
+    <!--        &lt;!&ndash;-->
+    <!--            使用bean标签定义一个Interceptor拦截器-->
+    <!--            如果直接定义在mvc:interceptors标签中，表示项目下的所有的请求都会被拦截器进行拦截,等价于 /**-->
+    <!--        &ndash;&gt;-->
+    <!--        <bean class="com.liu.springmvc.interceptor.MyInterceptor01"/>-->
+    <!--    </mvc:interceptors>-->
+
+
+    <!-- 配置拦截器：方式二：拦截部分请求，放行部分请求   -->
+    <!--        <mvc:interceptors>-->
+    <!--            &lt;!&ndash;-->
+    <!--                在标签<mvc:interceptor>中，可以自定义需要被拦截和不被拦截的请求-->
+    <!--                可以定义多个拦截器-->
+    <!--                如果有多个拦截器，则会根据配置的先后顺序来执行-->
+    <!--            &ndash;&gt;-->
+    <!--            <mvc:interceptor>-->
+    <!--                &lt;!&ndash;  通过<mvc:mapping标签配置需要被拦截的资源，支持通配符，可以配置多个          &ndash;&gt;-->
+    <!--                &lt;!&ndash;  path="/**" 表示拦截所有的请求 &ndash;&gt;-->
+    <!--                <mvc:mapping path="/**"/>-->
+    <!--                &lt;!&ndash;  通过<mvc:exclude-mapping标签配置不需要拦截的资源，支持通配符，可配置多个         &ndash;&gt;-->
+    <!--                &lt;!&ndash;  path="/model/*" 表示model下的所有请求 &ndash;&gt;-->
+    <!--                <mvc:exclude-mapping path="/model/*"/>-->
+    <!--                <bean class="com.liu.springmvc.interceptor.MyInterceptor01"/>-->
+    <!--            </mvc:interceptor>-->
+    <!--        </mvc:interceptors>-->
+
+    <!--        <mvc:interceptors>-->
+    <!--            <mvc:interceptor>-->
+    <!--                &lt;!&ndash;    被拦截的请求        &ndash;&gt;-->
+    <!--                <mvc:mapping path="/**"/>-->
+    <!--                &lt;!&ndash;     不拦截的请求       &ndash;&gt;-->
+    <!--                <mvc:exclude-mapping path="/model/test01"/>-->
+    <!--                <mvc:exclude-mapping path="/model/test02"/>-->
+    <!--                &lt;!&ndash;   使用的拦截器         &ndash;&gt;-->
+    <!--                <bean class="com.liu.springmvc.interceptor.MyInterceptor02"/>-->
+    <!--            </mvc:interceptor>-->
+    <!--        </mvc:interceptors>-->
+
+
+    <!--        <mvc:interceptors>-->
+    <!--            &lt;!&ndash; 拦截器链（多个拦截器构成）按照先后的顺序执行  &ndash;&gt;-->
+    <!--            <mvc:interceptor>-->
+    <!--                <mvc:mapping path="/**"/>-->
+    <!--                <bean class="com.liu.springmvc.interceptor.MyInterceptor01"/>-->
+    <!--            </mvc:interceptor>-->
+    <!--            <mvc:interceptor>-->
+    <!--                <mvc:mapping path="/**"/>-->
+    <!--                <bean class="com.liu.springmvc.interceptor.MyInterceptor02"/>-->
+    <!--            </mvc:interceptor>-->
+    <!--        </mvc:interceptors>-->
+
+
+    <!-- 非法访问拦截 拦截器配置   -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!--     拦截所有的请求       -->
+            <mvc:mapping path="/**"/>
+            <!--   不拦截登录请求         -->
+            <mvc:exclude-mapping path="/userInfo/login"/>
+            <mvc:exclude-mapping path="/uploadFile"/>
+            <mvc:exclude-mapping path="/hello"/>
+            <!--    未捕获的异常拦截测试请求        -->
+            <mvc:exclude-mapping path="/hello01"/>
+            <bean class="com.liu.springmvc.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
+    <!-- 文件上传   -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--  允许文件上传的最大尺寸      -->
+        <property name="maxUploadSize">
+            <value>104857600</value>
+        </property>
+        <!--
+            设置文件存入临时文件夹的最大大小的限制
+            此值是阈值，低于此值，则保存在内存中，高于此值，泽保存在硬盘上
+        -->
+        <property name="maxInMemorySize">
+            <value>4096</value>
+        </property>
+    </bean>
+
+
+    <!--
+        全局异常统一处理(3种)
+            1. 使用SpringMVC中提供的简单异常处理器 SimpleMappingExceptionResolver
+    -->
+
+    <!--        方式1： 使用SpringMVC中提供的简单异常处理器 SimpleMappingExceptionResolver-->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <!--   页面在转发时出现异常，将跳转到error错误页面     -->
+        <property name="defaultErrorView" value="error"/>
+        <!--    属性exceptionAttribute中包含了出现异常的信息，设置别名为ex    -->
+        <property name="exceptionAttribute" value="ex"/>
+
+        <!--   设置自定义异常和该异常对应的处理页面-->
+        <property name="exceptionMappings">
+            <props>
+                <!-- key表示具体的自定义异常的类，标签为出现该自定义异常要跳转到的处理页面  -->
+                <prop key="com.liu.springmvc.exception.ParamsException">params_error</prop>
+                <prop key="com.liu.springmvc.exception.BusinessException">business_error</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- 方式2： 实现Spring的异常处理接口 HandlerExceptionResolver自定义自己的异常处理器（推荐使用）  -->
+    <bean id="handlerExceptionResolver" class="com.liu.springmvc.GlobalExceptionResolver"/>
+
+</beans>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隐形参数</title>
+    <script type="text/javascript">
+        // 就是在 function 函数中不需要定义，但却可以直接用来获取所有参数的变量。我们管它叫隐形参数。
+        // 隐形参数特别像 java 基础的可变长参数一样。
+        // public void fun( Object ... args );
+        //         可变长参数其他是一个数组。
+        // 那么 js 中的隐形参数也跟 java 的可变长参数一样。操作类似数组。
+
+        function f1() {
+            // alert(arguments[0]);
+            // alert(arguments[1]);
+            // alert(arguments[2]);
+            // alert("可变形式参数");
+            for (var i=0; i<arguments.length; i++){
+                alert("我是可变形参: " + arguments[i]);
+            }
+        }
+        // f1(1,3,4,5,6);
+
+        // 编写一个函数，实现形参的累加和
+        function f2(a, b) {
+            var sum = 0;
+            for (var i = 0; i<arguments.length; i++){
+                sum += arguments[i];
+            }
+            return sum;
+        }
+
+        var sum = f2(3,2,4,5,6,7);
+        alert("累加和是: " + sum);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

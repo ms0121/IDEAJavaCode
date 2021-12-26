@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 创建service类，dao类，在dao中注入jdbcTemplate对象   -->
+    <!-- 配置文件，设置组件扫描的方式   -->
+    <context:component-scan base-package="com.liu.transaction"></context:component-scan>
+
+    <!-- 1.在spring配置文件中配置数据库连接池
+           数据库连接池
+       -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          destroy-method="close">
+        <property name="url" value="jdbc:mysql:///user_db" />
+        <property name="username" value="root" />
+        <property name="password" value="" />
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    </bean>
+
+    <!-- 配置JDBCTemplate对象，注入dataSource -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <!-- 给JdbcTemplate类的属性进行注入值(外部bean的注入方式)，即注入数据库信息dataSource -->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--  在spring配置文件中配置数据库事务管理器  -->
+    <!--    1）在 spring 配置文件引入名称空间 tx-->
+    <!--  2. 创建事务管理器  -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--  注入数据源 -->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 3. 开启事务注解   -->
+    <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+
+</beans>
+
+
+
+
+
+
+
+

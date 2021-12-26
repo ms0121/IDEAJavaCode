@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ajax.iml" filepath="$PROJECT_DIR$/Ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AjaxLocal/AjaxLocal.iml" filepath="$PROJECT_DIR$/../AjaxLocal/AjaxLocal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JQuery1/JQuery1.iml" filepath="$PROJECT_DIR$/../JQuery1/JQuery1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Level-Ajax-jQuery/Level-Ajax-jQuery.iml" filepath="$PROJECT_DIR$/../Level-Ajax-jQuery/Level-Ajax-jQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Spring/SpringIoc/SpringIoc.iml" filepath="$PROJECT_DIR$/../../Spring/SpringIoc/SpringIoc.iml" />
+    </modules>
+  </component>
+</project>

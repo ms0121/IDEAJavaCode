@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20e81afe-1e97-46e9-bdda-f456dd5e3cc3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Maven-Git/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\E_DISK\Maven-Git\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1swIdGAs3OunwsagRztWfhKOH0q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/springboot-dubbo-provider/src/main/java/com/liu/boot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot-dubbo-consumer/src/main/webapp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.345977" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.liu.boot.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\SpringBoot2\boot-09-ssm\springboot-dubbo-provider" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootDubboConsumerApplication">
+    <configuration name="SpringbootDubboConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-dubbo-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.SpringbootDubboConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDubboProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-dubbo-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liu.boot.SpringbootDubboProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20e81afe-1e97-46e9-bdda-f456dd5e3cc3" name="Default Changelist" comment="" />
+      <created>1621777310219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621777310219</updated>
+      <workItem from="1621777313260" duration="7102000" />
+      <workItem from="1621822278783" duration="2734000" />
+      <workItem from="1621909259481" duration="595000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Project_Structure" timestamp="1621777442684">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1621777442684" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1621823561080">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1621823561080" />
+    <state x="413" y="138" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1621781332434">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="138" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1621781332434" />
+    <state x="384" y="269" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1621783737089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="384" y="269" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.728@0.0.1366.728" timestamp="1621783737089" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1621909803845">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621909803845" />
+    <state width="1322" height="285" key="GridCell.Tab.0.bottom" timestamp="1621825240555">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="285" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621825240555" />
+    <state width="1322" height="285" key="GridCell.Tab.0.center" timestamp="1621825240555">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="285" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621825240555" />
+    <state width="1322" height="285" key="GridCell.Tab.0.left" timestamp="1621825240555">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="285" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621825240555" />
+    <state width="1322" height="285" key="GridCell.Tab.0.right" timestamp="1621825240555">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="285" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621825240555" />
+    <state width="1322" height="285" key="GridCell.Tab.1.bottom" timestamp="1621825240540">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="285" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621825240540" />
+    <state width="1322" height="285" key="GridCell.Tab.1.center" timestamp="1621825240540">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="285" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1621825240540" />
+    <state width="1322" height="285" key="GridCell.Tab.1.left" timestamp="1621825240540">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="285" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1621825240540" />
+    <state width="1322" height="285" key="GridCell.Tab.1.right" timestamp="1621825240540">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="285" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1621825240540" />
+    <state x="75" y="0" key="SettingsEditor" timestamp="1621783758573">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="75" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1621783758573" />
+    <state x="482" y="140" key="chooseDestDirectoryDialog" timestamp="1621781338041">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="482" y="140" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1621781338041" />
+    <state x="54" y="0" key="new project wizard" timestamp="1621909859197">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="54" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1621909859197" />
+  </component>
+</project>

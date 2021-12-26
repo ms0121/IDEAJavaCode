@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Onload事件的实现</title>
+
+
+    <script type="text/javascript">
+        // 静态实现的方式,将其全部封装在函数内即可
+        // onload 加载完成事件： 页面加载完成之后，常用于做页面 js 代码初始化操作
+        function onloadFun() {
+            alert("静态注册onload实现的所有的方法，全部都在这里!");
+        }
+
+        // onload事件的动态注册是固定的写法
+        window.onload = function f2() {
+            alert("动态注册的onload事件!");
+        }
+    </script>
+
+</head>
+<!--onload静态的实现需要手动的添加下面的参数值-->
+<!--<body onload="onloadFun();">-->
+<body>
+    <h1>
+       <font color="red" size="4" face="宋体">Onload事件的实现</font>
+    </h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

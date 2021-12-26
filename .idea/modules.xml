@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/IDEAJavaCode.iml" filepath="$PROJECT_DIR$/.idea/IDEAJavaCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CRM/crm.iml" filepath="$PROJECT_DIR$/CRM/crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/git-demo/git-demo.iml" filepath="$PROJECT_DIR$/git-demo/git-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/security01/security01.iml" filepath="$PROJECT_DIR$/Security/security01/security01.iml" />
+    </modules>
+  </component>
+</project>

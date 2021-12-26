@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!---->
+    <bean id="myschool" class="com.liu.da06.School">
+        <property name="name"  value="中国地质大学"/>
+        <property name="address" value="北京海淀区学院路"/>
+    </bean>
+
+</beans>
+
+

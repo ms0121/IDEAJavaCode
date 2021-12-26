@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="order" class="com.liu.spring.bean5.Order" init-method="initMethod" destroy-method="destroyMethod">
+        <property name="name"  value="订单1"></property>
+    </bean>
+
+    <!--    配置后置bean处理器, 即会为当前配置文件中的所有类添加后置处理器的方法-->
+    <bean id="myBean" class="com.liu.spring.bean5.MyBean"></bean>
+</beans>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p ="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--    开启组件扫描: 就是指定扫描哪个包下的文件, 看哪个包或者类下面有使用注解
+        1. 如果需要扫描多个包，多个包使用逗号进行分隔
+        2. 扫描包上层目录
+    -->
+    <context:component-scan base-package="com.liu.spring2"></context:component-scan>
+
+
+<!--    <context:component-scan base-package="com.liu.spring2">-->
+<!--        &lt;!&ndash;   不扫描带有Repository的注解     &ndash;&gt;-->
+<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>-->
+<!--    </context:component-scan>-->
+
+
+
+    <!--示例 1
+        use-default-filters="false" 表示现在不使用默认的filter，而是使用自己配置的filter
+        context:include-filter ，设置扫描哪些内容（下面的就是只扫描带有 Controller 注解的）
+    -->
+<!--    <context:component-scan base-package="com.liu.spring2" use-default-filters="false">-->
+<!--        <context:include-filter type="annotation"-->
+<!--                                expression="org.springframework.stereotype.Controller"/>-->
+<!--    </context:component-scan>-->
+
+
+    <!--示例 2
+        下面配置扫描包所有内容
+        context:exclude-filter： 设置哪些内容不进行扫描（面的就是不扫描带有 Controller 注解的）
+    -->
+<!--    <context:component-scan base-package="com.liu.spring2">-->
+<!--        <context:exclude-filter type="annotation"-->
+<!--                                expression="org.springframework.stereotype.Controller"/>-->
+<!--    </context:component-scan>-->
+
+
+</beans>

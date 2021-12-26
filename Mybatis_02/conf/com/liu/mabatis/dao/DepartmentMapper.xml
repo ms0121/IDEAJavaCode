@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.liu.mybatis.dao.DepartmentMapper">
+
+    <resultMap id="Dept" type="com.liu.mybatis.bean.Department">
+        <!--   id： 指定主键列的封装规则，即column表示的是sql中的列名，property代表的是bean中对应的属性名
+               其他的列如果不指定，则会自动进行封装，或者可以使用result进行指定列的对应
+               result: 表示普通的sql列和对应的bean属性名
+            -->
+        <id column="id" property="id"></id>
+        <result column="dept_name" property="departmentName"></result>
+    </resultMap>
+
+    <!--  查询部门信息  public Department getDeptById(Integer id);-->
+    <select id="getDeptById" resultMap="Dept">
+        select * from tbl_dept where id = #{id}
+    </select>
+
+
+    <!-- 方式一： collection嵌套结果集的方式，定义关联集合类型元素的封装规则
+                嵌套结果集的方式，使用collection标签定义关联的。。。。。
+      -->
+    <!-- 查询部门的信息，并返回属于当前部门的所有员工列表: public Department getDeptByIdPlus(Integer id) -->
+    <resultMap id="MyDept" type="com.liu.mybatis.bean.Department">
+        <id column="id" property="id"></id>
+        <result column="dept_name" property="departmentName"></result>
+        <!-- 因为员工是一个集合，所以需要使用下列的方法
+                collection定义关联集合类型的属性的封装规则
+                    property：代表是使用类型里面的那个参数
+                    ofType： 指定集合里面元素的类型
+         -->
+        <collection property="emps" ofType="com.liu.mybatis.bean.Employee">
+                <!-- 定义集合中元素的封装规则 : eid  last_name  email  gender -->
+            <id column="eid" property="id"></id>
+            <result column="last_name" property="lastName"></result>
+            <result column="email" property="email"></result>
+            <result column="gender" property="gender"></result>
+        </collection>
+    </resultMap>
+
+    <select id="getDeptByIdPlus" resultMap="MyDept">
+        select d.`id`, d.`dept_name` dept_name,
+            e.id eid, e.`last_name` last_name,e.`email` email, e.`gender` gender
+            from tbl_dept d
+            left join tbl_employee e
+            on d.`id` = e.`d_id`
+            where d.`id`=#{id}
+    </select>
+
+
+    <!-- 方式二： 使用分布查询的方式进行查询数据信息
+        public Department getDeptByIdStep(Integer id);
+     -->
+    <resultMap id="MyDeptStep" type="com.liu.mybatis.bean.Department">
+            <!--  id  dept_name-->
+        <id column="id" property="id"></id>
+        <id column="dept_name" property="departmentName"></id>
+        <!--  分布查询：链表查询  -->
+        <collection property="emps"
+             select="com.liu.mybatis.dao.EmployeeMapperPlus.getEmpsByDeptId"
+             column="id">
+        </collection>
+    </resultMap>
+
+    <select id="getDeptByIdStep" resultMap="MyDeptStep">
+        select id, dept_name from tbl_dept where id = #{id}
+    </select>
+
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+

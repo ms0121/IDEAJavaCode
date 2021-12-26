@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function2</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            // 使用html获取文本值
+            $("#btn1").click(function () {
+                // 二者会有区别
+                // 获取第一个span标签的文本值，不会解析里面的标签数据
+                alert($("span").html());
+                // 获取的是所有的span标签中的文本值
+                alert($("span").text());
+            });
+
+            // html设置文本值
+            $("#btn2").click(function () {
+               $("span:last").html("我是最后一个span标签");
+            });
+
+            // each的循环遍历数组的形式
+            $("#btn3").click(function () {
+                // 循环遍历整个数组的信息
+                var arr = [1,23,4];
+                $.each(arr, function (i, item) {
+                    alert(item);
+                });
+            });
+
+            // 循环遍历文本框中的值
+            $("#btn4").click(function () {
+                // 方式1
+                // $.each($(":text"), function (i, n) {
+
+                // 方式2
+                $(":text").each(function (i, n) {
+                    alert("i = " + i + "  value = " + n.value);
+                })
+            })
+
+
+
+        })
+
+    </script>
+
+</head>
+<body>
+
+    <p>文本值</p>
+    <span>我是第一个<b>span标签</b></span><br>
+    <span>我是新的数据</span><br>
+
+    <br>
+    <hr>
+    <p>文本框</p>
+    <input type="text" value="text1"><br>
+    <input type="text" value="text2"><br>
+    <input type="text" value="text3"><br>
+
+    <button id="btn1">按钮1</button>
+    <button id="btn2">按钮2</button>
+    <button id="btn3">按钮3</button>
+    <button id="btn4">获取文本框中的值</button>
+
+</body>
+</html>

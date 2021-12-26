@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liu.dao.StudentDao">
+
+    <!--
+        select:表示查询的操作
+        id:你要执行的sql语句的唯一标识符，mybatis会使用这个id的值来找到要执行的
+           sql语句，可以自定义，但是要求使用接口中的方法名称
+
+        resultType：表示返回结果的类型，是sql语句执行后得到的ResultSet，遍历这个
+              ResultSet得到java对象的类型，值写类型的全限定名称
+    -->
+    <!--    public List<Student> selectStudents();-->
+    <select id="selectStudents" resultType="com.liu.domain.Student">
+        select id, name, age from student order by id
+    </select>
+
+    <!--  多个参数的，得使用自定义的参数名称  -->
+    <select id="selectMutilParam" resultType="com.liu.domain.Student">
+        select id, name, age from student where name=#{myname} or age=#{myage}
+    </select>
+
+    <!--    计算当前学生的信息
+    int studentCount();-->
+    <select id="studentCount" resultType="int">
+        select count(*) from student
+    </select>
+
+
+    <!--  使用if的方式进行动态的sql语句查询学生信息  -->
+    <select id="selectStudentByIf" resultType="com.liu.domain.Student">
+         select id, name, age from student
+         where id > 0
+         <if test="name != '' and name != null">
+             and name=#{name}
+         </if>
+         <if test="age > 0">
+             and age > #{age}
+         </if>
+    </select>
+
+
+    <!--    使用where语句的方式进行查询信息-->
+    <select id="selectStudentByWhere" resultType="com.liu.domain.Student">
+        select id,name,age from student
+        <where>
+            <if test="name != '' and name != null">
+                name=#{name}
+            </if>
+            <if test="age > 20">
+                or age > #{age}
+            </if>
+        </where>
+    </select>
+
+    <!-- 形参是一个list的集合,使用foreach的方式进行查询   -->
+    <select id="studentForeach" resultType="com.liu.domain.Student">
+        select id,name,age from student where id in
+        <foreach collection="list" item="myid" open="(" close=")" separator=",">
+            #{myid}
+        </foreach>
+    </select>
+
+
+    <!-- public int insertStudent(Student student);   -->
+    <insert id="insertStudent">
+        insert into student(name,age) values( #{name}, #{age})
+    </insert>
+
+</mapper>
+
+<!--
+    该xml文件是sql映射文件（sql mapper）：用来写SQL语句的，mybatis会执行这些sql语句
+    1.指定约束文件:
+           <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+         mybatis-3-mapper.dtd:是约束文件的名称，拓展名是dtd的
+    2.约束文件的作用是：限制和检查在当前文件中出现的标签，属性必须符合mybatis的要求
+
+    3.mapper 是当前文件的根标签，必须的
+        namespace：叫做命名空间，唯一的值，可以是自定义的字符串，但是要求
+                    使用的是dao接口的全限定名称
+
+
+   4.代码片段的意思就是将重读的代码提取出来，就相当于java代码中的公共部分的信息
+
+-->

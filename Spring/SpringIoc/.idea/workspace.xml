@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4af514b7-2f1e-4642-b648-366aba34332f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../SpringIoc-di-xml/src/main/resources/da03/applicationContext.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SpringIoc-di-xml/src/main/resources/da05/applicationContext.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SpringIoc-di-xml/src/main/java/com/liu/da03/Student.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SpringIoc-di-xml/src/main/resources/da02/applicationContext.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SpringIoc-di-xml/src/main/resources/da06/total.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SpringIoc-di-xml/readme.txt" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SpringIoc-di-xml/src/test/java/com/liu/StudentTest04.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/liu/SomeTest.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SpringIoc-di-xml/src/main/resources/da04/applicationContext.xml" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rdw5FlV692PH5NgdMZki6fStfu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringIoc-di-xml/src/main/resources/da06" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\SpringIoc-di-xml\src\main\resources\da01" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.liu" />
+      <recent name="com.liu.da02" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\SpringIoc-di-xml\src\main\resources\da06" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\SpringIoc-di-xml\src\main\java\com\liu\da06" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\SpringIoc-di-xml\src\main\resources\da05" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\SpringIoc-di-xml\src\main\java\com\liu\da05" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\SpringIoc-di-xml\src\main\resources\da04" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StudentTest06.test06">
+    <configuration name="StudentTest03.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringIoc-di-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.StudentTest03" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest04.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringIoc-di-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.StudentTest04" />
+      <option name="METHOD_NAME" value="test04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest05.test05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringIoc-di-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.StudentTest05" />
+      <option name="METHOD_NAME" value="test05" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest06.test05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringIoc-di-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.StudentTest06" />
+      <option name="METHOD_NAME" value="test05" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest06.test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringIoc-di-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.StudentTest06" />
+      <option name="METHOD_NAME" value="test06" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StudentTest06.test06" />
+        <item itemvalue="JUnit.StudentTest06.test05" />
+        <item itemvalue="JUnit.StudentTest05.test05" />
+        <item itemvalue="JUnit.StudentTest04.test04" />
+        <item itemvalue="JUnit.StudentTest03.test02" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4af514b7-2f1e-4642-b648-366aba34332f" name="Default Changelist" comment="" />
+      <created>1619319089472</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619319089472</updated>
+      <workItem from="1619319096253" duration="5006000" />
+      <workItem from="1619329618144" duration="5604000" />
+      <workItem from="1619339826179" duration="615000" />
+      <workItem from="1619340474997" duration="3805000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="839" y="102" key="#com.intellij.ide.util.MemberChooser" timestamp="1619335962077">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="839" y="102" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1619335962077" />
+    <state x="463" y="53" key="FileChooserDialogImpl" timestamp="1619323805042">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="53" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619323805042" />
+    <state width="1322" height="264" key="GridCell.Tab.0.bottom" timestamp="1619344821147">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="264" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619344821147" />
+    <state width="1322" height="264" key="GridCell.Tab.0.center" timestamp="1619344821147">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="264" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619344821147" />
+    <state width="1322" height="264" key="GridCell.Tab.0.left" timestamp="1619344821147">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="264" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619344821147" />
+    <state width="1322" height="264" key="GridCell.Tab.0.right" timestamp="1619344821147">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="264" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619344821147" />
+    <state x="323" y="60" key="NewModule_or_Project.wizard" timestamp="1619323807707">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="323" y="60" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1619323807707" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1619344801714">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619344801714" />
+  </component>
+</project>

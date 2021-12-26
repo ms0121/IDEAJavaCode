@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS和jQuery的比较</title>
+
+    <!--必须将js导入到文件当中-->
+    <script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        // js实现事件的方式
+        // window.onload = function () {  // 页面在进行加载
+        //     var btnObj = document.getElementById("btn");
+        //     btnObj.onclick = function () { // 绑定按钮
+        //         alert("按钮起作用了");
+        //     }
+        // }
+
+        // JQuery实现的方式
+        $(function () { // 表示页面加载完成 之后，相当 window.onload = function () {}
+            var $btnObj = $("#btn"); // 表示按 id 查询标签对象
+            $btnObj.click(function () { // 绑定单击事件
+                alert("jQuery 的单击事件");
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    <button id="btn">按钮</button>
+</body>
+</html>

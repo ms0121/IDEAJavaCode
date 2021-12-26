@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+<!--  SpringMVC 的配置文件，扫描网站跳转逻辑的控制，配置-->
+    <context:component-scan base-package="com.liu" use-default-filters="false">
+        <!--  只扫描controller控制器,所以需要设置false -->
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!-- 配置视图解析器， 方便页面的返回，即controller中的返回  -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 两个标准配置   -->
+    <!--   将springmvc不能处理的资源交给Tomcat进行处理-->
+    <mvc:default-servlet-handler/>
+    <!--  处理ajax的请求, 映射动态请求  -->
+    <mvc:annotation-driven/>
+
+
+
+</beans>

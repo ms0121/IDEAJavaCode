@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--
+        包扫描的方式，只要标注了:@Component @Controller @Service @Repository这些注解的类，都会
+        在spring容器中自动的注入bean对象属性,但是需要进行各种配置
+        这种配置的方式也可以在配置类中进行使用
+        当需要设置扫描某些注解的时候，好需要设置use-default-filters的属性值为：false，才能禁用默认的扫描规则
+        use-default-filters: 禁用默认的扫描规则，
+   -->
+<!--  <context:component-scan base-package="com.liu" use-default-filters="false"/>-->
+
+    <!-- 使用配置文件的方式，在spring容器中注入一个类型为Person的bean对象
+       scope：用于设置当前的bean是单实例还是多实例的对象
+       单实例：每次从容器中获取出来的对象都是同一个
+       多实例：每次获取的是不同的对象（hascode值不一致）
+       init-method="": 指定初始化方法
+       destroy-method="":指定销毁的方法
+       -->
+    <!-- 指定配置文件的位置   -->
+<!--    <context:property-placeholder location="classpath:person.properties"/>-->
+<!--    <bean id="person" class="com.liu.bean.Person" scope="prototype" init-method="" destroy-method="">-->
+<!--        <property name="name"  value="zhangsan"/>-->
+<!--        <property name="age"   value="23"/>-->
+<!--    </bean>-->
+
+</beans>

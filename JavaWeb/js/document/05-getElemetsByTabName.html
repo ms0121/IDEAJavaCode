@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElemetsByName</title>
+
+    <script type="text/javascript">
+
+        // 全选
+        function checkAll() {
+            // 在没有id或者其他属性的时候，可以按照标签名进行查询
+            // document.getElementsByTagName("input");
+            // 是按照指定标签名来进行查询并返回集合
+            // 这个集合的操作跟数组 一样
+            // 集合中都是 dom 对象
+            // 集合中元素顺序 是他们在 html 页面中从上到下的顺序。
+
+
+            var elementsByTagName = document.getElementsByTagName("input");
+            for (var i = 0; i < elementsByTagName.length; i++) {
+                elementsByTagName[i].checked = true;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    兴趣爱好: <input type="checkbox" name="hobby" value="java" checked="checked"> Java
+            <input type="checkbox" name="hobby" value="cpp"> C++
+            <input type="checkbox" name="hobby" value="js"> JavaScript
+            <br/>
+            <button onclick="checkAll()">全选</button>
+
+</body>
+</html>

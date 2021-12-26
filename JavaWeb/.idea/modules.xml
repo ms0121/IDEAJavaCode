@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/06_web/06_web.iml" filepath="$PROJECT_DIR$/06_web/06_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_xml/06_xml.iml" filepath="$PROJECT_DIR$/06_xml/06_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_servlet/07_servlet.iml" filepath="$PROJECT_DIR$/07_servlet/07_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_servlet/08_servlet.iml" filepath="$PROJECT_DIR$/08_servlet/08_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_jsp/09_jsp.iml" filepath="$PROJECT_DIR$/09_jsp/09_jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_EL_JSTL/10_EL_JSTL.iml" filepath="$PROJECT_DIR$/10_EL_JSTL/10_EL_JSTL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13_cookie_session/13_cookie_session.iml" filepath="$PROJECT_DIR$/13_cookie_session/13_cookie_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15_filter/15_filter.iml" filepath="$PROJECT_DIR$/15_filter/15_filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16_json_ajx_i18n/16_json_ajx_i18n.iml" filepath="$PROJECT_DIR$/16_json_ajx_i18n/16_json_ajx_i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book/book.iml" filepath="$PROJECT_DIR$/book/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookShop/bookShop.iml" filepath="$PROJECT_DIR$/bookShop/bookShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/js/js.iml" filepath="$PROJECT_DIR$/js/js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tmp/tmp.iml" filepath="$PROJECT_DIR$/tmp/tmp.iml" />
+    </modules>
+  </component>
+</project>

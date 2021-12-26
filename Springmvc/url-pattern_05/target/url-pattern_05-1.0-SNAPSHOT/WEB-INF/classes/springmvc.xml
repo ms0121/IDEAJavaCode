@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- 声明组件扫描器，即@controller注解修饰的包下的类就可以创建对象从而执行类里面的方法   -->
+    <context:component-scan base-package="com.liu.controller"></context:component-scan>
+
+    <!-- 声明springmvc框架的视图解析器，帮助开发人员设置视图文件的路径   -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--  前缀：视图文件的路径, 斜杠不可以少      -->
+        <property name="prefix" value="/WEB-INF/view/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!-- 添加注解驱动   -->
+    <mvc:annotation-driven/>
+
+    <!--    第二种处理静态资源的方式
+        <mvc:resources 加入后，框架会自动的创建ResourceHttpRequestHandler这个处理器对象
+        让这个对象处理静态资源的访问，不依赖Tomcat服务器
+        mapping：访问静态资源的url地址，使用通配符 **
+        location：静态资源在你的项目中的目录位置
+    -->
+    <mvc:resources mapping="/static/**" location="/static/"></mvc:resources>
+
+<!--    <mvc:resources mapping="/images/**" location="/images/"></mvc:resources>-->
+<!--    <mvc:resources mapping="/js/**" location="/js/"></mvc:resources>-->
+
+    <!-- 第一种处理静态资源的方式：
+        需要在springmvc配置文件中加入 <mvc:default-servlet-handler>
+        原理是：加入这个标签后，框架会创建控制器对象，DefaultServletHttpServlet（类似于我们自己创建的MyController）
+        DefaultServletHttpServlet这个对象可以把接收的请求转发给Tomcat服务器的servlet
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
+    -->
+
+</beans>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--  导入vue.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+</head>
+<body>
+
+    <h3>hello, Vue.js</h3>
+
+    <div id="app">
+        {{message}}
+        <h4 v-if="type">Yes</h4>
+        <h4 v-else>No</h4>
+    </div>
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data: {
+                message: 'hello world! Vue!',
+                type: true
+            },
+
+        })
+    </script>
+</body>
+</html>

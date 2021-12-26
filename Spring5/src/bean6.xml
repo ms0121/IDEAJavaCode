@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+<!--    使用util标签完成list集合的注入提取-->
+    <!--    提取 list 集合类型属性注入-->
+    <util:list id="bookList">
+        <value>java从入门到精通</value>
+        <value>C++的入门到精通</value>
+        <value>教你如何成为时间管理大师</value>
+    </util:list>
+
+    <!--    2. 提取 list 集合类型属性注入使用,即将提取出来的共有属性注入到book.nameList中-->
+    <!--    singleton 单实例，prototype 多实例(即创建多个不同的对象)-->
+    <bean id="book" class="com.liu.spring.demo3.Book" scope="prototype">
+        <property name="nameList" ref="bookList"></property>
+    </bean>
+
+
+</beans>

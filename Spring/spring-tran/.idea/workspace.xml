@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71b74012-6ffd-4bbe-b52d-301f762ec4bb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="mybatis-mapper" />
+        <option value="mybatis-config" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/liu/service/impl/GoodsServiceImpl.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\E_DISK\Maven-Git\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rk7hDHWpicDFKBExjS0Peaafo2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\spring-aop\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BuyTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.BuyTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BuyTest.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71b74012-6ffd-4bbe-b52d-301f762ec4bb" name="Default Changelist" comment="" />
+      <created>1619508350171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619508350171</updated>
+      <workItem from="1619508354336" duration="4611000" />
+      <workItem from="1619513107585" duration="3013000" />
+      <workItem from="1619520913679" duration="129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="91" key="#com.intellij.ide.util.MemberChooser" timestamp="1619510639495">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="872" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1619510639495" />
+    <state x="458" y="104" key="FileChooserDialogImpl" timestamp="1619521005934">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="458" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619521005934" />
+    <state width="1322" height="274" key="GridCell.Tab.0.bottom" timestamp="1619512999551">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="274" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619512999551" />
+    <state width="1322" height="274" key="GridCell.Tab.0.center" timestamp="1619512999550">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="274" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619512999550" />
+    <state width="1322" height="274" key="GridCell.Tab.0.left" timestamp="1619512999550">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="274" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619512999550" />
+    <state width="1322" height="274" key="GridCell.Tab.0.right" timestamp="1619512999550">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="274" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619512999550" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1619521040410">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619521040410" />
+  </component>
+</project>

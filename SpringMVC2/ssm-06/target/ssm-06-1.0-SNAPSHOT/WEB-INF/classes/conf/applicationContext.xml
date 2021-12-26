@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- spring的配置文件：需要声明service，dao。工具类等对象-->
+
+    <!-- 声明数据源的位置   -->
+    <context:property-placeholder location="classpath:conf/jdbc.properties"/>
+
+    <!-- 加载数据源，连接数据库 -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!-- SqlSessionFactoryBean 创建  sqlSessionFactory对象 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--  声明mybatis.xml配置文件的位置      -->
+        <property name="configLocation" value="classpath:conf/mybatis.xml"/>
+    </bean>
+
+    <!--  声明mybatis配置文件的扫描器,创建dao对象  -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--   因为是String类型，属于基本数据类型，所以使用value进行赋值     -->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <!--   指定dao的路径，进行创建对象     -->
+        <property name="basePackage" value="com.liu.dao"/>
+    </bean>
+
+    <!-- 声明service的注解，实现service对象的创建  -->
+    <context:component-scan base-package="com.liu.service"/>
+
+    <!-- 事务的配置：可以使用注解的方式，aspectj的配置   -->
+
+</beans>

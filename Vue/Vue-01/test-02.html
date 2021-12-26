@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--  导入vue.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+</head>
+<body>
+    <h3>hello,test-02, --> Vue.js</h3>
+
+<!--  view层的视图  -->
+    <div id="app">
+        <span v-bind:title="message">
+            鼠标悬停操作!
+        </span>
+    </div>
+
+
+    <script>
+        var app = new Vue({
+            el:'#app',
+            //data为model层的数据信息
+            data: {
+                message: 'hello world! Vue!'
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

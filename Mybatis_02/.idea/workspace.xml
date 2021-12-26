@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ca658de-bde3-4ae7-b9ed-f64701b13393" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1r5ubxqfuNn1dqHqRfxFD4SHSiP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mybatis" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.liu.mybatis.bean" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\Mybatis_02\conf\com\liu\mabatis\dao" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Mybatis_02" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Mybatis\conf" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Mybatis\lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.liu.mybatis.test" />
+      <recent name="com.liu.mybatis.dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\Mybatis_02\conf\com\liu\mabatis\dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MybatisTestCache.test1">
+    <configuration name="MybatisPlusTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.mybatis.test.MybatisPlusTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisPlusTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.mybatis.test.MybatisPlusTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.mybatis.test.MybatisTest1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTestCache.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.mybatis.test.MybatisTestCache" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.mybatis.test.MybatisTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MybatisTestCache.test1" />
+        <item itemvalue="JUnit.MybatisTest.test3" />
+        <item itemvalue="JUnit.MybatisTest1.test1" />
+        <item itemvalue="JUnit.MybatisPlusTest.test4" />
+        <item itemvalue="JUnit.MybatisPlusTest.test2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ca658de-bde3-4ae7-b9ed-f64701b13393" name="Default Changelist" comment="" />
+      <created>1618278346429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618278346429</updated>
+      <workItem from="1618278349211" duration="38000" />
+      <workItem from="1618280086411" duration="79000" />
+      <workItem from="1618287032155" duration="20000" />
+      <workItem from="1618287286762" duration="4314000" />
+      <workItem from="1618293809253" duration="450000" />
+      <workItem from="1618295013487" duration="1289000" />
+      <workItem from="1618300924044" duration="2776000" />
+      <workItem from="1618303879692" duration="10000" />
+      <workItem from="1618304495485" duration="59000" />
+      <workItem from="1618304586865" duration="11000" />
+      <workItem from="1618304656987" duration="4295000" />
+      <workItem from="1618313017294" duration="5057000" />
+      <workItem from="1618319455827" duration="47000" />
+      <workItem from="1618325786619" duration="3096000" />
+      <workItem from="1618364845515" duration="4384000" />
+      <workItem from="1618379855435" duration="14620000" />
+      <workItem from="1618406059629" duration="7000" />
+      <workItem from="1618406521760" duration="5048000" />
+      <workItem from="1618414940058" duration="917000" />
+      <workItem from="1618416719438" duration="235000" />
+      <workItem from="1618444760376" duration="491000" />
+      <workItem from="1618446597050" duration="77000" />
+      <workItem from="1618481465896" duration="96000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1618444840150">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1618444840150" />
+    <state x="557" y="194" key="FileChooserDialogImpl" timestamp="1618481560694">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="557" y="194" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1618481560694" />
+    <state width="1322" height="360" key="GridCell.Tab.0.bottom" timestamp="1618445251784">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="360" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618445251784" />
+    <state width="1322" height="360" key="GridCell.Tab.0.center" timestamp="1618445251784">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="360" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1618445251784" />
+    <state width="1322" height="360" key="GridCell.Tab.0.left" timestamp="1618445251784">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="360" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1618445251784" />
+    <state width="1322" height="360" key="GridCell.Tab.0.right" timestamp="1618445251784">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="360" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1618445251784" />
+    <state width="1322" height="286" key="GridCell.Tab.1.bottom" timestamp="1618395880133">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="286" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618395880133" />
+    <state width="1322" height="286" key="GridCell.Tab.1.center" timestamp="1618395880133">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="286" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1618395880133" />
+    <state width="1322" height="286" key="GridCell.Tab.1.left" timestamp="1618395880133">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="286" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1618395880133" />
+    <state width="1322" height="286" key="GridCell.Tab.1.right" timestamp="1618395880133">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="286" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1618395880133" />
+    <state x="368" y="0" key="SettingsEditor" timestamp="1618303854298">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="368" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1618303854298" />
+    <state x="381" y="256" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618287403537">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="381" y="256" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1618287403537" />
+    <state x="53" y="0" key="new project wizard" timestamp="1618446671919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="53" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1618446671919" />
+    <state x="748" y="49" key="search.everywhere.popup" timestamp="1618289405891">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="748" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1618289405891" />
+  </component>
+</project>

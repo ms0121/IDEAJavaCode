@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        // 不传递参数就是获取信息，传递参数则为设置
+        $(function () {
+           // alert($("div").html());  // 获取
+           // 对标签进行设置
+           //  $("div").html("我是一个程序员");  // 设置
+        });
+
+
+        // 文本
+        $(function () {
+            // alert($("div").text());
+            $("div").text("<h1>我是个标题</h1>");
+        });
+
+        //
+        $(function () {
+            $("button").click(function () {
+                // alert($("#username").val()); // 获取
+                alert($("#username").val("高级程序员!"));
+            });
+        });
+
+    </script>
+</head>
+<body>
+<!--    <div><h1>我是一个div标签</h1> <span>我是一个span标签</span></div>-->
+<!--使用value设置默认值-->
+    <input type="text" name="username" id="username" value="lms">
+    <button>input</button>
+</body>
+</html>
+
+
+
+
+
+

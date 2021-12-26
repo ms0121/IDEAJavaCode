@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        声明Student对象：
+        注入：就是赋值的意思
+        简单类型：spring中规定Java的基本数据类型和string类型都是简单类型
+        di:给属性赋值
+        1.set注入（设值注入）：spring调用类的set方法（只要有set方法即可，不管是否有该属性），就可以在set方法中完成属性赋值
+            1)简单的类型的set注入
+            <bean id="xx" class="yyy">
+                <property name="属性名字" value="此属性的值"/>
+                <property .../>
+            </bean>
+
+            2）. 包含引用类型的set注入方式，
+            <bean id="xx" class="yyy">
+                <property name="属性名字" ref="bean的id（对象的名称）"/>
+            </bean>
+
+    -->
+    <bean id="student" class="com.liu.da02.Student">
+        <property name="name" value="张飒"/>   <!-- 等价于setName("张飒")-->
+        <property name="age"  value="21"/>   <!-- 等价于setAge(21)-->
+        <property name="school" ref="school"/>  <!-- 等价于setSchool(school)-->
+    </bean>
+
+    <bean id="school" class="com.liu.da02.School">
+        <property name="name"  value="中国地质大学"/>
+        <property name="address" value="北京海淀区学院路"/>
+    </bean>
+
+
+</beans>
+<!--
+    spring配置文件：
+        bean：是根标签，spring把java对象成为bean
+        spring-beans.xsd: 是约束文件，和mybatis指定的dtd是一样
+-->
+
+
+

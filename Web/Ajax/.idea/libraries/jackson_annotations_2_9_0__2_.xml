@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jackson-annotations-2.9.0 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Level-Ajax-jQuery/web/WEB-INF/lib/jackson-annotations-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Level-Ajax-jQuery/web/WEB-INF/lib/jackson-core-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Level-Ajax-jQuery/web/WEB-INF/lib/jackson-databind-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Level-Ajax-jQuery/web/WEB-INF/lib/mysql-connector-java-5.1.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

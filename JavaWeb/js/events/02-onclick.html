@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Onclick事件的实现</title>
+
+    <script type="text/javascript">
+        // 静态的方式
+        function onclickFun() {
+            alert("静态注册onclick事件的实现!");
+        }
+
+
+        // onclick时间的动态的方式演示获取onclik注册的信息
+        window.onload = function () {
+            // document: 是 JavaScript 语言提供的一个对象（文档，即当前的整个页面信息内容）<br/>,
+            // 通过id属性获取指定的标签对象
+            var btn = document.getElementById("bt1");
+            // 2 通过标签对象.事件名 = function(){}
+            btn.onclick = function () {
+                alert("动态注册onclick事件");
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <button onclick="onclickFun()">按钮1</button>
+    <button id="bt1">按钮2</button>
+</body>
+</html>
+
+
+
+

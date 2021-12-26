@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="ehcache-core-2.6.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ehcache-core-2.6.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mybatis-3.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mybatis-ehcache-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.37-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

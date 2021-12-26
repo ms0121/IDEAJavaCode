@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js2</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        function btnClick() {
+            // 获取dom对象
+           var obj = document.getElementById("btn");
+           alert("使用dom对象的属性: " + obj.value);
+
+           // dom对象转为jQuery对象
+            var jbtn = $(obj);
+            // 使用jQuery对象的函数获取value值
+            alert("使用jQuery对象的属性: " + jbtn.val());
+        }
+
+
+        // 计算输出文本框中的数的平方
+        function power() {
+            // 使用jQuery获取到jQuery对象，在转为dom对象，从而获取到 dom对象中的值value
+            // 将得到的jQuery对象转为dom对象
+            // var btn = $("#txt")[0];  // 从数组中获取下标为0的dom对象
+            var btn = $("#txt").get(0);
+            // alert(btn.value)
+
+            var num = btn.value;
+            btn.value = num * num;
+
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+    <div>
+        <input type="button" id="btn" value="按钮" onclick="btnClick()">
+    </div>
+    <br>
+    <hr>
+
+    <div>
+        <input type="button" value="计算平方" onclick="power()"><br>
+        <input type="text" id="txt">
+    </div>
+
+</body>
+</html>

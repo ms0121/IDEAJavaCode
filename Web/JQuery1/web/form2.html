@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            // 处理按钮1
+            $("#btn1").click(function () {
+                $(":text:enabled").val("我是可用的text");
+                $(":text:disabled").val("不可以操作的text");
+            });
+
+            // 按钮2
+            $("#btn2").click(function () {
+                var $checkbox = $(":checkbox:checked");
+                // 遍历每个对象value属性的值
+                // n.value == $(n).val() 都是获取value属性的值
+                $checkbox.each(function (i, n) {
+                    alert($(n).val() + ": " + n.value);
+                });
+            });
+
+            // 按钮3：
+            $("#btn3").click(function () {
+                // 获取下拉列表的value值和文本值
+                var obj = $("select>option:selected");
+                alert(obj.val() + " " + obj.text());
+            });
+
+        })
+
+    </script>
+
+</head>
+<body>
+
+    <p>文本框</p>
+    <input type="text" id="text1" value="text1" ><br>
+    <input type="text" id="text2" value="text2" disabled><br>
+    <input type="text" id="text3" value="text3" ><br>
+    <input type="text" id="text4" value="text4" disabled><br>
+    <hr>
+
+    <p>复选框</p>
+    <input type="checkbox" value="游戏">游戏1
+    <input type="checkbox" value="健身" checked>健身1
+    <input type="checkbox" value="开发" checked>开发1
+    <hr>
+
+    <p>下拉框</p>
+    <select id="lang">
+        <option value="java" selected>java1</option>
+        <option value="C++">C++1</option>
+        <option value="python">python1</option>
+    </select>
+
+    <br>
+    <p>功能按键</p>
+    <button id="btn1">显示可用的text设值</button><br>
+    <button id="btn2">显示所有被选中的复选框的值</button><br>
+    <button id="btn3">显示下拉列表的值</button><br>
+
+
+
+</body>
+</html>

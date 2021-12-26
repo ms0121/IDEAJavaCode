@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2403b065-2446-43a1-bc1f-a7ab182daf08" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/liu/ba01/MyAspect.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/liu/ba03/MyAspect.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/liu/AopTest3.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/readme.txt" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/liu/ba02/MyAspect.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/liu/AopTest5.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/liu/AopTest1.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\E_DISK\Maven-Git\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rh3kDVZSjT4a5GO58FwSNIB9wI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/liu/ba05" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.liu" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\spring-aop-aspectj\src\main\java\com\liu\ba05" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\spring-aop-aspectj\src\main\java\com\liu\ba04" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\spring-aop-aspectj\src\main\java\com\liu\ba03" />
+      <recent name="D:\E_DISK\IDEAJavaCode\Spring\spring-aop-aspectj\src\main\java\com\liu\ba02" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AopTest5.test5">
+    <configuration name="AopTest1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop-aspectj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.AopTest1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AopTest2.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop-aspectj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.AopTest2" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AopTest3.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop-aspectj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.AopTest3" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AopTest5.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop-aspectj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liu" />
+      <option name="MAIN_CLASS_NAME" value="com.liu.AopTest5" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AopTest5.test5" />
+        <item itemvalue="JUnit.AopTest3.test3" />
+        <item itemvalue="JUnit.AopTest2.test2" />
+        <item itemvalue="JUnit.AopTest1.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2403b065-2446-43a1-bc1f-a7ab182daf08" name="Default Changelist" comment="" />
+      <created>1619414636319</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619414636319</updated>
+      <workItem from="1619414640746" duration="1341000" />
+      <workItem from="1619422721931" duration="123000" />
+      <workItem from="1619422879865" duration="2614000" />
+      <workItem from="1619426265310" duration="194000" />
+      <workItem from="1619426550842" duration="404000" />
+      <workItem from="1619427128727" duration="64000" />
+      <workItem from="1619427233697" duration="4112000" />
+      <workItem from="1619432006412" duration="698000" />
+      <workItem from="1619437796823" duration="6281000" />
+      <workItem from="1619447593913" duration="118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619426955579">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1619426955579" />
+    <state x="463" y="68" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1619426800620">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="68" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1619426800620" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1619442616980">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1619442616980" />
+    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1619447709326">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619447709326" />
+    <state width="1322" height="208" key="GridCell.Tab.0.bottom" timestamp="1619447567044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619447567044" />
+    <state width="1322" height="208" key="GridCell.Tab.0.center" timestamp="1619447567044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="208" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619447567044" />
+    <state width="1322" height="208" key="GridCell.Tab.0.left" timestamp="1619447567044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="208" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619447567044" />
+    <state width="1322" height="208" key="GridCell.Tab.0.right" timestamp="1619447567044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="208" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619447567044" />
+    <state width="1322" height="208" key="GridCell.Tab.1.bottom" timestamp="1619447567044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="208" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619447567044" />
+    <state width="1322" height="208" key="GridCell.Tab.1.center" timestamp="1619447567044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="208" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619447567044" />
+    <state width="1322" height="208" key="GridCell.Tab.1.left" timestamp="1619447567044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="208" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619447567044" />
+    <state width="1322" height="208" key="GridCell.Tab.1.right" timestamp="1619447567044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="208" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619447567044" />
+    <state x="460" y="161" key="Performance.Activity.Monitor" timestamp="1619427389449">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="460" y="161" key="Performance.Activity.Monitor/0.0.1366.728@0.0.1366.728" timestamp="1619427389449" />
+    <state x="326" y="0" key="SettingsEditor" timestamp="1619447557078">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="326" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619447557078" />
+    <state x="53" y="58" key="new project wizard" timestamp="1619447712705">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="53" y="58" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1619447712705" />
+    <state x="815" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1619443509607">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="815" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1619443509607" />
+  </component>
+</project>

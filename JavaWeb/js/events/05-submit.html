@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>submit表单提交数据事件</title>
+
+    <script type="text/javascript">
+        // 出现异常就终止数据表单的提交,就不会出现所谓的页面跳转
+        //静态表单数据的提交
+        function onsubmitFun() {
+            alert("静态提交数据表");
+            return false;
+        }
+
+        // 动态表单数据的提交的事件
+        window.onload = function () {
+            // 获取标签值
+            var sum = document.getElementById("formid");
+            sum.onsubmit = function () {
+                alert("动态提交表单出现了异常");
+                return false;
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <!--    即使出现异常也会提交数据表单, 所以设置submit为：return（必不可少） false-->
+    <form action="http://localhost:8080" method="get" onsubmit="return onsubmitFun()">
+        <input onsubmit="onsubmitFun()" type="submit"><br/>
+    </form>
+
+    // 动态数据表单的提交
+    <form action="http://localhost:8080" method="get" id="formid">
+        <input type="submit">
+    </form>
+
+
+</body>
+</html>

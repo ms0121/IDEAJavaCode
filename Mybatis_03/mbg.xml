@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <!-- context：指定如何连接到目标数据库
+        targetRuntime: 指定生成sql数据库操作语句
+                MyBatis3Simple：自动生成简单的CRUD（增删改查的方法）
+                MyBatis3: 生成豪华的生删改查的方法
+                每次在更换的时候，都需要将原来的进行删除
+      -->
+<!--    <context id="DB2Tables" targetRuntime="MyBatis3Simple">-->
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/mybatis?allowMultiQueries=true"
+                        userId="root"
+                        password="">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- javaModelGenerator:指定Javabean的生成策略
+            targetPackage：目标包名
+            targetProject:目标工程路径
+          -->
+        <javaModelGenerator targetPackage="com.liu.mybatis.bean" targetProject=".\src">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- sqlMapGenerator:sql映射生成策略
+            targetPackage：生成目标存放路径
+            -->
+        <sqlMapGenerator targetPackage="./conf"  targetProject="./conf">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- javaClientGenerator:指定mapper接口所在的位置       -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.liu.mybatis.dao"
+                             targetProject=".\src">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!--指定逆向分析的是哪些数据库表，根据表名创建JavaBean-->
+        <table tableName="tbl_dept" domainObjectName="Department" ></table>
+        <table tableName="tbl_employee" domainObjectName="Employee"></table>
+
+    </context>
+</generatorConfiguration>

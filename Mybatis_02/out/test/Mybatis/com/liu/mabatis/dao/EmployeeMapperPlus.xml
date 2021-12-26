@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.liu.mybatis.dao.EmployeeMapperPlus">
+    
+    <!-- 自定义摸个JavaBean的封装规则 
+      type：自定义规则的java类型
+      id：唯一id方便使用（）
+      -->
+    <resultMap id="MyEmp" type="com.liu.mybatis.bean.Employee">
+        <!--   id： 指定主键列的封装规则，即column表示的是sql中的列名，property代表的是bean中对应的属性名
+               其他的列如果不指定，则会自动进行封装，或者可以使用result进行指定列的对应
+               result: 表示普通的sql列和对应的bean属性名
+
+            -->
+        <id column="id" property="id"></id>
+        <result column="last_name" property="lastName"></result>
+        <result column="gender" property="gender"></result>
+        <result column="email" property="email"></result>
+    </resultMap>
+
+    <!--  resultMap: 自定义结果集映射的规则  -->
+    <!--    查询员工并进行返回: public Employee getEmpById(Integer id);-->
+    <select id="getEmpById" resultMap="MyEmp">
+        select * from tbl_employee where id = #{id}
+    </select>
+
+
+     <!-- 场景一： 查出员工的信息和所属的部门
+        public Employee getEmpAndDept(Integer id);
+       -->
+    <resultMap id="MyDifEmp" type="com.liu.mybatis.bean.Employee">
+        <id column="id" property="id"></id>
+        <result column="lastname" property="lastName"></result>
+        <result column="gender" property="gender"></result>
+        <result column="email" property="email"></result>
+
+        <!-- 1. 联合查询，使用级联封装属性-->
+        <!-- <result column="department_id" property="dept.id"></result>-->
+        <!-- <result column="department_name" property="dept.departmentName"></result>-->
+
+        <!--
+            2. 嵌套查询，使用 association定义关联的单个对象的规则：
+               association可以指定联合的Javabean对象，
+               property="dept" 指定哪个属性是Javabean的属性
+               javaType= 指定该属性对象的类型，不可以省略 -->
+        <!--        <association property="dept" javaType="com.liu.mybatis.bean.Department">-->
+        <!--            <id column="department_id" property="id"></id>-->
+        <!--            <result column="department_name" property="departmentName"></result>-->
+        <!--        </association>-->
+
+        <!-- 3.分布查询： association  定义关联对象的封装规则
+              select：表明当前属性是调用select指定的方法查出的结果（即在departmentMapper里面
+              的方法路径下进行查询得到的）
+               column：表明将哪一列的值传递给这个方法
+              流程：使用select指定的方法（传入column指定的这列参数的值）查出对象，并封装给property指定的对象
+        -->
+        <association property="dept"
+                     select="com.liu.mybatis.dao.DepartmentMapper.getDeptById"
+                     column="d_id">
+        </association>
+    </resultMap>
+
+    <!--  注意：可以使用延迟加载（懒加载）:按需加载（加快查询的速度）
+            Employee ==> Dept
+            我们每次在查询Employee对象的时候，都将会一起查询出来
+            但是我们可以按需查询：
+                部门信息在我们使用的时候再去查询，在分段查询的基础上加上两个配置文件（防止在全局配置文件的setting标签中）
+     -->
+
+    <select id="getEmpAndDept" resultMap="MyDifEmp">
+        select * from tbl_employee where id = #{id}
+           <!-- 该查询方法适用于上面的方法1， 2
+           select e.`id` id, e.`last_name` lastname,e.`gender` gender,e.`email` email,
+           e.`d_id` dept_id, d.`id` department_id, d.`dept_name` department_name
+           from tbl_employee e, tbl_dept d
+           where d.`id` = e.`id` and e.`id`=#{id}  -->
+    </select>
+
+    <!-- 场景2: 查询部门的时候，将所有属于该部门的员工信息也查询出来
+        按照部门id查出所有的员工
+         public List<Employee> getEmpsByDeptId(Integer deptId);
+       -->
+    <select id="getEmpsByDeptId" resultType="com.liu.mybatis.bean.Employee">
+        select * from tbl_employee where d_id = #{deptId}
+    </select>
+
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
