@@ -1,6 +1,5 @@
 package com.liu.learn;
 
-import org.junit.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,7 +15,6 @@ public class RandomAccessFileTest2 {
     /**
      * 测试单线程的文件复制
      */
-    @Test
     public void SingleFile() {
         FileInputStream fis = null;
         FileOutputStream fos = null;

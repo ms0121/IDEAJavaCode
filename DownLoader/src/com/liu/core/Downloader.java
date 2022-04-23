@@ -66,7 +66,6 @@ public class Downloader {
             InputStream input = httpURLConnection.getInputStream();
             // 从输入流中获取缓冲流(相当于把文件已经下载到了内存当中)
             BufferedInputStream bis = new BufferedInputStream(input);
-
             // 用输出流将文件写入到磁盘中
             // 指定文件要输出到的路径
             FileOutputStream fos = new FileOutputStream(httpFileName);

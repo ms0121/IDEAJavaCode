@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2b3f5d03-2d54-4385-9f7b-13d1d9ed5b7f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +21,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="jdk-1.8" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1zKyYVXshS2qZ28QcbR8wpE7eJU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -30,18 +41,18 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,9 +60,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -59,7 +70,7 @@
       <recent name="com.liu.core" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RandomAccessFileTest4">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.liu.Main" />
       <module name="DownLoader" />
@@ -92,6 +103,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,14 +159,15 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.RandomAccessFileTest4" />
         <item itemvalue="Application.RandomAccessFileTest3" />
         <item itemvalue="JUnit.RandomAccessFileTest2.SingleFile" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RandomAccessFileTest.write" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -161,6 +184,7 @@
       <workItem from="1640432307371" duration="7619000" />
       <workItem from="1640490224929" duration="257000" />
       <workItem from="1640490573610" duration="21000" />
+      <workItem from="1650700449933" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="短点续传">
       <created>1640441726489</created>
@@ -180,7 +204,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -189,55 +213,5 @@
     </ignored-roots>
     <MESSAGE value="短点续传" />
     <option name="LAST_COMMIT_MESSAGE" value="短点续传" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1633960865532">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1633960865532" />
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1640490322690">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1640490322690" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1640490595478">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1640490595478" />
-    <state width="1322" height="353" key="GridCell.Tab.0.bottom" timestamp="1640442165914">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="353" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1640442165914" />
-    <state width="1322" height="353" key="GridCell.Tab.0.center" timestamp="1640442165914">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="353" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1640442165914" />
-    <state width="1322" height="353" key="GridCell.Tab.0.left" timestamp="1640442165913">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="353" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1640442165913" />
-    <state width="1322" height="353" key="GridCell.Tab.0.right" timestamp="1640442165914">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="353" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1640442165914" />
-    <state x="136" y="0" key="SettingsEditor" timestamp="1640490586756">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="136" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1640490586756" />
-    <state x="236" y="152" key="Vcs.Push.Dialog.v2" timestamp="1640490345747">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="236" y="152" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1640490345747" />
-    <state x="54" y="0" key="new project wizard" timestamp="1640432404921">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="54" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1640432404921" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1640437946002">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1640437946002" />
-    <state x="879" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1640435401923">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="879" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1640435401923" />
   </component>
 </project>

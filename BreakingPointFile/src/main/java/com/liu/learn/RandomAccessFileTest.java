@@ -1,6 +1,5 @@
 package com.liu.learn;
 
-import org.junit.Test;
 
 import java.io.File;
 import java.io.RandomAccessFile;
@@ -13,7 +12,6 @@ import java.nio.charset.StandardCharsets;
  */
 public class RandomAccessFileTest {
 
-    @Test
     public void read() throws Exception {
         File file = new File("D:/E_DISK/IDEAJavaCode/BreakingPointFile/a.txt");
         RandomAccessFile randomAccessFile = new RandomAccessFile(file, "r");
@@ -34,12 +32,12 @@ public class RandomAccessFileTest {
     }
 
 
-    @Test
     public void write() throws Exception {
         File file = new File("D:/E_DISK/IDEAJavaCode/BreakingPointFile/a.txt");
         RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw");
 
         String str = "zhangsan";
+        randomAccessFile.write(str.getBytes(StandardCharsets.UTF_8));
         randomAccessFile.write(str.getBytes(StandardCharsets.UTF_8));
     }
 

@@ -50,6 +50,7 @@ public class DownloaderPlus {
         DownLoadInfoThreadPlus downLoadInfoThreadPlus = null;
 
         try {
+            // 获取文件连接对象
             httpURLConnection = HttpUtils.getHttpURLConnection(url);
             // 获取连接中要下载文件的总大小
             int contentLength = httpURLConnection.getContentLength();
@@ -70,7 +71,7 @@ public class DownloaderPlus {
             split(url, list);
 
 
-            // 知道计数器归0之后才会往下执行(也就是等5个线程都执行完毕)
+            // 直到计数器归0之后才会往下执行(也就是等5个线程都执行完毕)
             countDownLatch.await();
 
             // 直接使用CountDownLatch代替下面的代码
@@ -92,7 +93,6 @@ public class DownloaderPlus {
                 // 清除临时文件
                 clearTempFile(filePath);
             }
-
 
         } catch (FileNotFoundException e) {
             // {}是占位符
@@ -146,10 +146,10 @@ public class DownloaderPlus {
                     startPos++;
                 }
 
-                // 创建下载任务
+                // 创建下载任务对象
                 DownLoaderTask downLoaderTask = new DownLoaderTask(url, startPos, endPos, i, countDownLatch);
 
-                // 将任务提交到线程池中
+                // 将任务对象提交到线程池中
                 Future<Boolean> future = threadPoolExecutor.submit(downLoaderTask);
                 // 将future返回值添加到list中
                 futureList.add(future);
@@ -198,6 +198,4 @@ public class DownloaderPlus {
         }
         return true;
     }
-
-
 }

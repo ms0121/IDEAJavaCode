@@ -5,7 +5,7 @@ package com.liu.constant;
  * @date 2021-10-11 - 8:36
  */
 public class Constant {
-    public static final String PATH = "D:\\360Downloads\\";
+    public static final String PATH = "E:\\java_learn_tmp_file\\";
     // 将下载的字节数转为MB
     public static final double MB = 1024d * 1024d;
     // 设置字节数组的大小

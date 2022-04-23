@@ -1,11 +1,12 @@
 package com.liu;
 
+import com.liu.core.Downloader;
 import com.liu.core.DownloaderPlus;
 import com.liu.util.LogUtils;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainTest {
 
     // https://down.qq.com/qqweb/PCQQ/PCQQ_EXE/PCQQ2021.exe
     // 分片: 60s
