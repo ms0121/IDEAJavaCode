@@ -9,6 +9,9 @@ public class Constant {
     // 文件保存根路径
     public static final String PATH = "E:\\java_learn_tmp_file\\";
 
+    // 文件上传到的根路径
+    public static final String UPLOAD_PATH = "E:\\java_learn_tmp_file\\upload\\";
+
     // MB
     public static final double MB = 1024d * 1024d;
 

@@ -54,7 +54,7 @@ public class FragmentDownloadTask implements Callable<Boolean> {
         // 创建临时文件的保存路径
         httpFileName = Constant.PATH + httpFileName;
 
-        // 获取指定位置下载连接对象
+        // 获取指定下载区间位置的连接对象
         HttpURLConnection httpURLConnection = HttpUtils.getHttpURLConnection(url, startPos, endPos);
 
         try (

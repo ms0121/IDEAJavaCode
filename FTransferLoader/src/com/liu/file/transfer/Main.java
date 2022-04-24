@@ -2,8 +2,11 @@ package com.liu.file.transfer;
 
 import com.liu.file.transfer.core.download.basic.DownloaderBasic;
 import com.liu.file.transfer.core.download.fragment.FragmentDownloader;
+import com.liu.file.transfer.core.upload.basic.UploaderBasic;
+import com.liu.file.transfer.core.upload.fragment.FragmentUploader;
 import com.liu.file.transfer.utils.LogUtils;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -16,6 +19,10 @@ public class Main {
     /**
      * 下载的文件路径： https://down.qq.com/qqweb/PCQQ/PCQQ_EXE/PCQQ2021.exe
      * 文件保存路径：E:\java_learn_tmp_file\
+     *
+     * 上传的文件路径: E:/JD实习文件/lms学习文件.7z
+     *
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -37,8 +44,22 @@ public class Main {
 //        DownloaderBasic downloader = new DownloaderBasic();
 //        downloader.download(url);
 
-//        分片下载版
-        FragmentDownloader fragmentDownloader = new FragmentDownloader();
-        fragmentDownloader.download(url);
+//        多线程分片下载版
+//        FragmentDownloader fragmentDownloader = new FragmentDownloader();
+//        fragmentDownloader.download(url);
+
+
+//        多线程分片上传
+//        UploaderBasic uploadBasic = new UploaderBasic();
+//        uploadBasic.upload(url);
+
+//        多线程分片断点续传
+        FragmentUploader fragmentUploader = new FragmentUploader();
+        try {
+            fragmentUploader.upload(url);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }

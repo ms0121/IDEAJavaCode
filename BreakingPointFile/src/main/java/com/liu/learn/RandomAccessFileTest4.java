@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class RandomAccessFileTest4 {
     public static void main(String[] args) throws Exception {
-        File file = new File("E:\\java_learn_tmp_file\\PCQQ2021.exe");
+        File file = new File("E:\\JD实习文件\\lms学习文件.7z");
 
         // 使用ConcurrentHashMap记录每个线程读取到位置
         ConcurrentHashMap<Integer, Integer> map = new ConcurrentHashMap<>();
@@ -53,7 +53,7 @@ public class RandomAccessFileTest4 {
                 try {
                     // 进行文件的读写
                     RandomAccessFile rafIn = new RandomAccessFile(file, "r");
-                    RandomAccessFile rafOut = new RandomAccessFile("E:\\java_learn_tmp_file\\upload\\xxx.exe", "rw");
+                    RandomAccessFile rafOut = new RandomAccessFile("E:\\java_learn_tmp_file\\upload\\xxx.zip", "rw");
                     // 记录读到的日记文件
                     log = new RandomAccessFile(logFile, "rw");
 
@@ -90,7 +90,7 @@ public class RandomAccessFileTest4 {
                         // 以逗号进行分割，写入
                         StringJoiner joiner = new StringJoiner(",");
                         map.forEach((key, val) -> {
-                            String.valueOf(val);
+                            joiner.add(String.valueOf(val));
                         });
                         log.write(joiner.toString().getBytes(StandardCharsets.UTF_8));
 
@@ -127,7 +127,7 @@ public class RandomAccessFileTest4 {
             }
         }
         // 线程读取完毕，将日记数据进行删除
-        // fl.delete();
+        fl.delete();
 
         long end = System.currentTimeMillis();
         System.out.println("总耗时: " + (end - start));

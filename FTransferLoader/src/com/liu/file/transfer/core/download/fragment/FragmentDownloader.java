@@ -17,11 +17,7 @@ import java.util.concurrent.*;
  * @date: 2022-04-23 16:56
  */
 public class FragmentDownloader {
-    /**
-     * 下载指定url文件
-     *
-     * @param url
-     */
+
 
     // 创建线程池，执行打印的任务
     public ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
@@ -35,7 +31,7 @@ public class FragmentDownloader {
     public CountDownLatch countDownLatch = new CountDownLatch(Constant.THREAD_NUM);
 
     /**
-     * 下载的方法
+     * 下载指定url文件
      *
      * @param url
      */
