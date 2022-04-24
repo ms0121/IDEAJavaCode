@@ -16,13 +16,13 @@ public class DownloaderInfoPlus implements Runnable {
     public long httpFileContextLength;
 
     // 记录本地已经下载的文件大小
-    public int finishedSize;
+    public static volatile LongAdder finishedSize = new LongAdder();
 
     // 记录档次已经下载的文件大小
     // 因为当前的变量被多个线程进行访问，所以需要将其设置为volatile类型，目的就是让每个线程都去主内存中读取数据信息
     // 这样子就可以保证变量的可见性
     // 修改为原子类(static为了方便操作，只适合当个用户使用)
-    public static volatile LongAdder downSize;
+    public static volatile LongAdder downSize = new LongAdder();
 
     // 记录上一秒内已经下载好的文件大小
     public double preSize;

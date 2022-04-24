@@ -18,7 +18,7 @@ import java.util.concurrent.CountDownLatch;
  * @author: lms
  * @date: 2022-04-23 21:36
  */
-public class DownloadTask implements Callable {
+public class FragmentDownloadTask implements Callable<Boolean> {
 
     // 下载文件的路径信息
     private String url;
@@ -30,13 +30,13 @@ public class DownloadTask implements Callable {
     private long endPos;
 
     // 表示当前要下载的是哪个部分文件
-    private int part;
+    private Integer part;
 
-    // 线程计数器
+    // 计数器
     private CountDownLatch countDownLatch;
 
     // 创建任务对象的时候，需要将相关的属性进行传递
-    public DownloadTask(String url, long startPos, long endPos, int part, CountDownLatch countDownLatch) {
+    public FragmentDownloadTask(String url, long startPos, long endPos, int part, CountDownLatch countDownLatch) {
         this.url = url;
         this.startPos = startPos;
         this.endPos = endPos;
@@ -46,7 +46,7 @@ public class DownloadTask implements Callable {
 
     // 执行具体的下载任务操作流程
     @Override
-    public Object call() throws Exception {
+    public Boolean call() throws Exception {
         // 获取要下载文件的文件名
         String httpFileName = HttpUtils.getHttpFileName(url);
         // 将当前下载的部分文件设置为临时文件
@@ -74,17 +74,15 @@ public class DownloadTask implements Callable {
                 // 写盘
                 randomAccessFile.write(buffer, 0, len);
             }
-        } catch (FileNotFoundException e) {
-            LogUtils.error("下载的文件不存在!", url);
+        }  catch (FileNotFoundException e){
+            LogUtils.error("下载文件不存在{}", url);
             return false;
-        } catch (Exception e) {
-            LogUtils.error("文件下载失败!");
+        } catch (Exception e){
+            LogUtils.error("下载失败");
             return false;
         } finally {
             // 关闭连接
-            if (httpURLConnection != null) {
-                httpURLConnection.disconnect();
-            }
+            httpURLConnection.disconnect();
             // 每个线程执行完毕，都将countDownLatch进行减1的操作
             countDownLatch.countDown();
         }

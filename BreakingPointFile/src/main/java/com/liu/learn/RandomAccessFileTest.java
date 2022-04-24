@@ -21,7 +21,7 @@ public class RandomAccessFileTest {
         // 相对路径，跳过前3个字节开始读取数据信息
         // randomAccessFile.skipBytes(3);
 
-        // 绝对路径(从文件头开始读取数据)
+        // 绝对路径(无论前面被读取了多少个字符，指针都是从文件头开始读取数据)
         randomAccessFile.seek(3);
 
         byte[] bytes = new byte[1024];
@@ -36,9 +36,14 @@ public class RandomAccessFileTest {
         File file = new File("D:/E_DISK/IDEAJavaCode/BreakingPointFile/a.txt");
         RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw");
 
+        //
         String str = "zhangsan";
+        // 写入的是字节，所以需要转为字节
+        // write的特点：写入的内容会自动的替换到原文件中对应的位置
         randomAccessFile.write(str.getBytes(StandardCharsets.UTF_8));
-        randomAccessFile.write(str.getBytes(StandardCharsets.UTF_8));
+
+        // 因此可以使用randomaccessfile类的seek方法，从头开始，从指定的位置
+        // 开始写入数据内容
     }
 
 

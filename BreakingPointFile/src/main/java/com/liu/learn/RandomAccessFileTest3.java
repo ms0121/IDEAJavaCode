@@ -35,14 +35,14 @@ public class RandomAccessFileTest3 {
                     RandomAccessFile rafIn = new RandomAccessFile(file, "r");
                     RandomAccessFile rafOut = new RandomAccessFile("D:/360Downloads/xxx.exe", "rw");
 
-                    // 计算每个线程读取文件的开始位置
+                    // 计算每个线程读文件的开始位置
                     rafIn.seek(k * partLen);
                     // 每个写文件的开始位置
                     rafOut.seek(k * partLen);
 
                     int plen = 0, len = -1;
-                    // 每次读取的文件大小为 8k
-                    byte[] bytes = new byte[1024 * 8];
+                    // 每次读取的文件大小为 10k
+                    byte[] bytes = new byte[1024 * 10];
 
                     // 不断的读取，写文件
                     while (true) {

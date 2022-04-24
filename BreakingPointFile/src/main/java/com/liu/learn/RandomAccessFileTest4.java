@@ -5,6 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.StringJoiner;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 基于多线程的断点续传方法
@@ -14,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class RandomAccessFileTest4 {
     public static void main(String[] args) throws Exception {
-        File file = new File("C:/Users/Administrator/Desktop/PCQQ2021.exe");
+        File file = new File("E:\\java_learn_tmp_file\\PCQQ2021.exe");
 
         // 使用ConcurrentHashMap记录每个线程读取到位置
         ConcurrentHashMap<Integer, Integer> map = new ConcurrentHashMap<>();
@@ -28,8 +29,8 @@ public class RandomAccessFileTest4 {
         long length = file.length();
         // 每个线程分得的长度(向上取整，因为randomAccessFile会对重叠的部分进行合并整合)
         int partLen = (int) Math.ceil(length / threadNum);
-        // 日记文件
-        String logFile = "D:/360Downloads/xxx.exe.log";
+        // 存放日记文件
+        String logFile = "E:/java_learn_tmp_file/logs/xxx.exe.log";
 
         // 读取日记文件
         String[] data = null;
@@ -52,7 +53,7 @@ public class RandomAccessFileTest4 {
                 try {
                     // 进行文件的读写
                     RandomAccessFile rafIn = new RandomAccessFile(file, "r");
-                    RandomAccessFile rafOut = new RandomAccessFile("D:/360Downloads/xxx.exe", "rw");
+                    RandomAccessFile rafOut = new RandomAccessFile("E:\\java_learn_tmp_file\\upload\\xxx.exe", "rw");
                     // 记录读到的日记文件
                     log = new RandomAccessFile(logFile, "rw");
 
@@ -64,8 +65,8 @@ public class RandomAccessFileTest4 {
                     rafOut.seek(_data == null ? k * partLen : Integer.parseInt(_data[k]));
 
                     int plen = 0, len = -1;
-                    // 每次读取的文件大小为 8k
-                    byte[] bytes = new byte[1024 * 8];
+                    // 每次读取的文件大小为 10k
+                    byte[] bytes = new byte[1024 * 10];
 
                     // 不断的读取，写文件
                     while (true) {
@@ -92,7 +93,6 @@ public class RandomAccessFileTest4 {
                             String.valueOf(val);
                         });
                         log.write(joiner.toString().getBytes(StandardCharsets.UTF_8));
-
 
                         // 如果plen大于等于下一个线程的开始位置，说明当前线程要写的文件长度已经达到，就执行退出操作
                         if (plen + (_data == null ? k * partLen : Integer.parseInt(_data[k])) >= (k + 1) * partLen) {
@@ -127,7 +127,7 @@ public class RandomAccessFileTest4 {
             }
         }
         // 线程读取完毕，将日记数据进行删除
-        fl.delete();
+        // fl.delete();
 
         long end = System.currentTimeMillis();
         System.out.println("总耗时: " + (end - start));

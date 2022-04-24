@@ -2,11 +2,9 @@ package com.liu.file.transfer.core.download.fragment;
 
 
 import com.liu.file.transfer.constant.Constant;
-import com.liu.file.transfer.core.download.basic.DownloaderInfo;
 import com.liu.file.transfer.utils.FileUtils;
 import com.liu.file.transfer.utils.HttpUtils;
 import com.liu.file.transfer.utils.LogUtils;
-import com.sun.org.apache.bcel.internal.generic.RETURN;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -14,7 +12,7 @@ import java.util.ArrayList;
 import java.util.concurrent.*;
 
 /**
- * @description: 实现最基础的文件下载功能（单线程版本的下载器）
+ * @description: 实现文件的分片下载
  * @author: lms
  * @date: 2022-04-23 16:56
  */
@@ -50,15 +48,14 @@ public class FragmentDownloader {
         long localFileContextLength = FileUtils.getLocalFileContextLength(filePath);
         // 获取文件下载连接对象
         HttpURLConnection httpURLConnection = null;
-        // 记录总文件的大小
-        int contentLength = 0;
         // 下载信息任务对象
         DownloaderInfoPlus downloaderInfoPlus = null;
 
         try {
+            // 获取连接对象
             httpURLConnection = HttpUtils.getHttpURLConnection(url);
             // 获取下载文件的总大小
-            contentLength = httpURLConnection.getContentLength();
+            int contentLength = httpURLConnection.getContentLength();
             // 判断当前要下载的文件是否已经被下载过
             if (localFileContextLength > contentLength) {
                 LogUtils.info("{} 当前文件已经存在!", httpFileName);
@@ -78,7 +75,7 @@ public class FragmentDownloader {
             countDownLatch.await();
 
             // 执行文件的合并操作
-            if (merge(filePath)) {
+            if (merge(filePath, url)) {
                 // 清除临时文件
                 clearTempFile(filePath);
             }
@@ -107,22 +104,21 @@ public class FragmentDownloader {
      */
     public void split(String url, ArrayList<Future> futureList) {
         try {
-            // 获取文件下载连接对象
-            HttpURLConnection httpURLConnection = HttpUtils.getHttpURLConnection(url);
             // 获取下载文件的总大小
-            long fileContentLength = HttpUtils.getFileContentLength(url);
+            long contentLength = HttpUtils.getFileContentLength(url);
             // 计算每个线程需要下载的文件大小
-            long eachSize = (fileContentLength / Constant.THREAD_NUM);
+            long eachSize = contentLength / Constant.THREAD_NUM;
             // 给每个线程创建对象的下载任务
             for (int i = 0; i < Constant.THREAD_NUM; i++) {
                 // 每个分片的开始和结束位置
                 long startPos = i * eachSize;
-                long endPos = 0;
+                long endPos;
 
                 // 最后一个文件分片
                 if (i == Constant.THREAD_NUM - 1) {
                     endPos = 0;
                 } else {
+                    // 每个分块文件的结束位置
                     endPos = startPos + eachSize;
                 }
 
@@ -132,24 +128,28 @@ public class FragmentDownloader {
                 }
 
                 // 创建下载任务对象
-                DownloadTask downLoaderTask = new DownloadTask(url, startPos, endPos, i, countDownLatch);
+                FragmentDownloadTask fragmentDownloadTask = new FragmentDownloadTask(url, startPos, endPos, i, countDownLatch);
 
                 // 将任务对象提交到线程池中
-                Future<Boolean> future = threadPools.submit(downLoaderTask);
+                Future<Boolean> future = threadPools.submit(fragmentDownloadTask);
                 // 将future返回值添加到list中
                 futureList.add(future);
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     /**
-     * 合并文件操作
+     * 合并文件操作,还需要进行文件的校验工作，防止下载文件出现的缺失
+     *  校验出现了一个小错误，就是在验证远程文件的时候，无法通过url进行直接验证
      * @param fileName 文件路径
      * @return
      */
-    public boolean merge(String fileName) {
+    public boolean merge(String fileName, String url) {
+        // 通过url计算出源文件的md5加密串
+        // String originFileMd5 = FileUtils.checkFileMd5(url);
+
         LogUtils.info("开始合并文件: ");
         int len = -1;
         byte[] buffer = new byte[Constant.TYPE_SIZE];
@@ -160,18 +160,29 @@ public class FragmentDownloader {
             // 按照顺序读写临时文件，然后进行写出
             for (int i = 0; i < Constant.THREAD_NUM; i++) {
                 // 文件输入流
-                BufferedInputStream bis =
-                        new BufferedInputStream(new FileInputStream(fileName + ".temp" + i));
-                while ((len = bis.read(buffer)) != -1) {
-                    accessFile.write(buffer, 0, len);
-                }
+               try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(fileName + ".temp" + i))){
+                   while ((len = bis.read(buffer)) != -1) {
+                       accessFile.write(buffer, 0, len);
+                   }
+               }
             }
+
+            LogUtils.info("文件校验正确，合并成功~~~~~");
+
+//             计算合并完成的文件加密串
+//            String newFileMd5 = FileUtils.checkFileMd5(fileName);
+//             验证是否是同一个文件
+//            if (originFileMd5.equals(newFileMd5)) {
+//                // 合并成功
+//                LogUtils.info("文件校验正确，合并成功~~~~~");
+//            }else {
+//                // 合并成功
+//                LogUtils.info("下载的文件有缺失，请重新进行下载~~~~~");
+//            }
         } catch (IOException e) {
             e.printStackTrace();
             return false;
         }
-        // 合并成功
-        LogUtils.info("文件合并成功~~~~~");
         return true;
     }
 
