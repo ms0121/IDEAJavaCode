@@ -7,7 +7,7 @@ package com.liu.file.transfer.constant;
  */
 public class Constant {
     // 文件保存根路径
-    public static final String PATH = "E:\\java_learn_tmp_file\\";
+    public static final String PATH = "E:\\java_learn_tmp_file\\download\\";
 
     // 文件上传到的根路径
     public static final String UPLOAD_PATH = "E:\\java_learn_tmp_file\\upload\\";
@@ -20,6 +20,9 @@ public class Constant {
 
     // 文件分片数量
     public static final int THREAD_NUM = 5;
+
+    // 压缩的文件后缀名
+    public static final String SUFFIX = ".7z";
 
 
 }

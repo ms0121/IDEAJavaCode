@@ -10,21 +10,24 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.StringJoiner;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.*;
 
 /**
  * @description:
  * @author: lms
  * @date: 2022-04-24 14:08
  */
-public class FragmentUploader {
+public class FragmentUploaderPlus {
+
+    // 创建一个线程
+    public ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
 
     /**
      * 实现多线程版本的文件断点续传
      *
      * @param url
      */
-    public void upload(String url) throws IOException {
+    public void upload(String url) throws IOException, InterruptedException {
         // 获取文件名
         String httpFileName = HttpUtils.getHttpFileName(url);
         // 构建文件上传的路径
@@ -34,11 +37,11 @@ public class FragmentUploader {
         // 计算需要上传文件的大小
         File file = new File(url);
         long uploadFileLength = file.length();
-        if (localFileContextLength > uploadFileLength) {
+        if (localFileContextLength >= uploadFileLength) {
             LogUtils.info("文件已经存在，请不要重复上传: {}", httpFileName);
             return;
         }
-        // 每个线程分得的长度(向上取整，因为randomAccessFile会对重叠的部分进行合并整合)
+        // 每个线程分得的长度(向上取整，因为RandomAccessFile会对重叠的部分进行合并整合)
         int partLen = (int) Math.ceil(uploadFileLength / Constant.THREAD_NUM);
 
         // 记录每个线程已经下载到的各自负责分区部分的字节位置
@@ -55,27 +58,29 @@ public class FragmentUploader {
         // 如果日记文件存在，则读取里面的数据文件
         if (logFile.exists()) {
             BufferedReader reader = new BufferedReader(new FileReader(logFile));
-            String line = reader.readLine();
-            // 拆分字符串
-            data = line.split(",");
+            String readLine = reader.readLine();
+            data = readLine.split(",");
             reader.close();
         }
         // 可以在线程的内部进行操作
         final String[] logData = data;
 
+        // 打印下载的信息
+        DownloaderInfoPlus downloaderInfoPlus = new DownloaderInfoPlus((int) uploadFileLength);
+        // 线程池每隔一秒钟执行一次
+        scheduledExecutorService.scheduleAtFixedRate(downloaderInfoPlus, 1, 1, TimeUnit.SECONDS);
+
         // 创建分片上传的操作
         for (int i = 0; i < Constant.THREAD_NUM; i++) {
             final int k = i;
             Thread thread = new Thread(() -> {
-                // 用于读取日记文件的随机文件流
-                RandomAccessFile rafLog = null;
-                try {
-                    // 创建随机读写文件流
-                    RandomAccessFile rafIn = new RandomAccessFile(file, "r");
-                    RandomAccessFile rafOut = new RandomAccessFile(uploadFilePath, "rw");
-                    // 进行日记文件信息的读写
-                    rafLog = new RandomAccessFile(logFile, "rw");
-
+                try (
+                        // 创建随机读写文件流
+                        RandomAccessFile rafIn = new RandomAccessFile(file, "r");
+                        RandomAccessFile rafOut = new RandomAccessFile(new File(uploadFilePath), "rw");
+                        // 进行日记文件信息的读写
+                        RandomAccessFile rafLog = new RandomAccessFile(logFile, "rw");
+                ){
                     // 使用seek函数实现文件从指定的位置开始读取和写入文件
                     // 需要从指定的位置开始读取数据，从而实现断点续传
                     rafIn.seek(logData == null ? k * partLen : Integer.parseInt(logData[k]));
@@ -86,6 +91,8 @@ public class FragmentUploader {
                     int plen = 0, len = -1;
                     byte[] buffer = new byte[Constant.TYPE_SIZE];
                     while ((len = rafIn.read(buffer)) != -1) {
+                        // 记录当前已经下载的字节数
+                        DownloaderInfoPlus.downSize.add(len);
                         // 记录当前写入的字节数
                         plen += len;
                         // 将本次读取到的字节数写入到日记文件中，标识当前已经下载到该位置
@@ -109,20 +116,10 @@ public class FragmentUploader {
                             break;
                         }
                     }
-                    rafIn.close();
-                    rafOut.close();
                 } catch (FileNotFoundException e) {
                     LogUtils.error("上传的文件不存在，请重新进行选择文件上传!");
                 } catch (IOException e) {
                     LogUtils.error("文件上传失败!");
-                } finally {
-                    if (rafLog != null) {
-                        try {
-                            rafLog.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
                 }
             });
             thread.start();
@@ -130,7 +127,7 @@ public class FragmentUploader {
         }
 
         // 删除临时文件
-        long start = System.currentTimeMillis();
+        // long start = System.currentTimeMillis();
         // 阻塞主线程
         for (Thread thread : threadArrayList) {
             // 等所有的线程结束之后，main线程才能继续执行
@@ -140,10 +137,14 @@ public class FragmentUploader {
                 e.printStackTrace();
             }
         }
+        scheduledExecutorService.shutdown();
         // 线程读取完毕，将日记数据进行删除
         logFile.delete();
-        long end = System.currentTimeMillis();
-        System.out.println("总耗时: " + (end - start));
-        System.out.println("文件复制完成~~~");
+        // 构建上传成功之后的下载地址
+        String downLoadPath = Constant.UPLOAD_PATH + httpFileName;
+        System.out.println();
+        LogUtils.info("文件: {} 上传成功~~~~, 文件的下载地址是: {}", httpFileName, downLoadPath);
+        // long end = System.currentTimeMillis();
+        // System.out.println("总耗时: " + (end - start));
     }
 }

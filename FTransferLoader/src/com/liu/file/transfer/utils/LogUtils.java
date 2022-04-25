@@ -11,11 +11,11 @@ import java.time.format.DateTimeFormatter;
 public class LogUtils {
     // 成功
     public static void info(String msg, Object... args){
-        print(msg, "-info-", args);
+        print(msg, " -info- ", args);
     }
 
     public static void error(String msg, Object... args){
-        print(msg, "-error-", args);
+        print(msg, " -error- ", args);
     }
 
 
